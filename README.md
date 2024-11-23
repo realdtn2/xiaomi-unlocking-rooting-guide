@@ -38,7 +38,7 @@ This guide details the steps to root your device, hide the root, and hiding unlo
 - Download the tool from [here](https://dosya.co/zq1jej7lylai/miflash_unlock_en_7.6.727.43.zip.html).
 
 ### Step 7: Sign in your Xiaomi's account in the Mi Unlock tool
-- After you downloaded the extracted the tool, open **miflash_unlock.exe**.
+- After you downloaded the tool, extract it, navigate to the extracted folder and open **miflash_unlock.exe**.
 - It will prompt you to sign in.
 - After signing in, agree to the disclaimer.
 
