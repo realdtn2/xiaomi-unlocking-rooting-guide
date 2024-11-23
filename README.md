@@ -6,7 +6,7 @@ This guide details the steps to root your device, hide the root, and hiding unlo
 ## Unlocking the boootloader
 
 ### Warning
-- BACK UP ANY DATA YOU MAY HAVE ON YOUR PHONE, THIS WILL FACTORY RESET YOUR PHONE..
+- BACK UP ANY DATA YOU MAY HAVE ON YOUR PHONE, THIS WILL FACTORY RESET YOUR PHONE.
 
 ### Requirements
 - Account must be over 30 days old.
