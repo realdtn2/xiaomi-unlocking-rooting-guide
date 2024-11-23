@@ -1,7 +1,7 @@
 
-# Rooting and Hiding Root for Xiaomi 14T (Global), should work for most Android devices
+# Unlocking bootloader, rooting, hiding root and hiding unlocked bootloader status for Xiaomi 14T (Global), should work for most Xiaomi and android devices
 
-This guide details the steps to root your device and hide the root status, applicable to Xiaomi 14T (Global) and most Android devices.
+This guide details the steps to root your device, hide the root, and hiding unlocked bootloader status, applicable to Xiaomi 14T (Global), Redmi K60 Ultra 5G, and most Xiaomi and android devices.
 
 ## Unlocking the boootloader
 
