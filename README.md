@@ -1,3 +1,5 @@
+Even though this is written for Xiaomi 14T, it should work for most Xiaomi and other android devices
+
 Rooting:
 
 Step 1: Unlock your bootloader (Refer to https://github.com/bkerler/mtkclient/issues/1253#issuecomment-2453485808), for more detail check out https://xiaomi.eu/community/threads/all-in-one-xiaomi-14-houji-unlock-bootloader-root-flash-twrp-flash-rom.71645/ (ONLY FOLLOW THE UNLOCK BOOTLOADER SECTION)
