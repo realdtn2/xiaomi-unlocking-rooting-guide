@@ -37,11 +37,11 @@ Step 16: You should now be rebooted to the system and rooted
 
 Hiding root:
 
-Step 1: Go to Magisk Alpha Settings -> Hide Magisk App (You can name it to anything you want, I will be using "Settings") -> Disable Zygisk (Zygisk Next Will be used instead as the built-in Zygisk is detected in banking apps like vietnamese banks: Techcombank; MB Bank; VCB Digibank; ...) -> Enfore Denylist Off
+Step 1: Go to Magisk Alpha Settings -> Hide Magisk App (You can name it to anything you want, I will be using "Settings") -> Disable Zygisk (Zygisk Next Will be used instead as the built-in Zygisk is detected in banking apps like vietnamese banks: Techcombank; MB Bank; VCB Digibank; ...) -> Enforce Denylist Off
 
 Step 2: In Configure DenyList, choose the app you wish to hide root (Make sure to click the app THEN click the checkbox)
 
-Step 3: Install the following magisk modules in this order: Play Intergrity Fix (https://github.com/chiteroman/PlayIntegrityFix/releases) + Tricky Store (https://github.com/5ec1cff/TrickyStore/releases) + Zygisk Next (https://github.com/Dr-TSNG/ZygiskNext/releases) + Zygisk Assistant (https://github.com/snake-4/Zygisk-Assistant/releases) + LSPosed (https://github.com/JingMatrix/LSPosed/releases) + Shamiko (https://github.com/LSPosed/LSPosed.github.io/releases)
+Step 3: Install the following magisk modules in this order: Zygisk Next (https://github.com/Dr-TSNG/ZygiskNext/releases) + Play Intergrity Fix (https://github.com/chiteroman/PlayIntegrityFix/releases) + Tricky Store (https://github.com/5ec1cff/TrickyStore/releases) + Zygisk Assistant (https://github.com/snake-4/Zygisk-Assistant/releases) + LSPosed (https://github.com/JingMatrix/LSPosed/releases) + Shamiko (https://github.com/LSPosed/LSPosed.github.io/releases)
 
 Step 4: Reboot
 
