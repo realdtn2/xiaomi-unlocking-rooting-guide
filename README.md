@@ -1,107 +1,199 @@
-Even though this is written for Xiaomi 14T, it should work for most Xiaomi and other android devices
 
-Rooting:
+# Rooting and Hiding Root for Xiaomi 14T (Global), should work for most Android devices
 
-Step 1: Unlock your bootloader (Refer to https://github.com/bkerler/mtkclient/issues/1253#issuecomment-2453485808), for more detail check out https://xiaomi.eu/community/threads/all-in-one-xiaomi-14-houji-unlock-bootloader-root-flash-twrp-flash-rom.71645/ (ONLY FOLLOW THE UNLOCK BOOTLOADER SECTION)
+This guide details the steps to root your device and hide the root status, applicable to Xiaomi 14T (Global) and most Android devices.
 
-Step 2: Get the ROMs files of your current firmware (About phone -> OS Version) (I got my firmware from here: https://miuirom.org/)
+## Unlocking the boootloader
 
-Step 3: Download and extract the firmware (You can use 7-Zip)
+### Warning
+- BACK UP ANY DATA YOU MAY HAVE ON YOUR PHONE, THIS WILL FACTORY RESET YOUR PHONE..
 
-Step 4: Go to the "images" folder of the extracted firmware
+### Requirements
+- Account must be over 30 days old.
+- Enable **Find device** in **Xiaomi Cloud** in the Settings app (Not sure if this is necessary).
 
-Step 5: Copy the "init_boot.img" into a new folder on your desktop, then rename the file to "init_boot_stock.img" (YOU MUST NOT DELETE THIS INCASE OF BRICK)
+### Step 1: Enable OEM Unlocking
+- In the Settings app, go to  **About phone**, then tap the **OS version** 5 times.
+- Enable **OEM Unlocking** from **Developer Options**.
 
-Step 6: Copy "init_boot_stock.img" to your phone
+### Step 2: Reinstall Xiaomi Community
+- Uninstall Xiaomi Community, reboot, then reinstall via the Play Store.
 
-Step 7: Install Magisk Alpha (https://install.appcenter.ms/users/vvb2060/apps/magisk/distribution_groups/public)
+### Step 3: Change account's region
+- Sign in into your Xiaomi account through the Xiaomi Community app.
+- Go to the **Me** tab, scroll down and select **Set up**.
+- Select **Change region** and choose **Global**
 
-Step 8: Open Magisk Alpha -> Press top "Install" button -> Select and Patch a File -> Choose the "init_boot_stock.img" file -> After that it should give you a file similar to "magisk_patched-28001_p5r8c.img" in the Download folder of your phone
+### Step 4: Apply for unlocking
+- Exactly at 12:00 AM GMT+8, press "Apply for unlocking" (If you do this too late, you may encounter an "application quota limit reached" error, so ensure you act precisely at 12:00 AM GMT+8).
+- It might display an "Account Error". If that happens, you'll need to retry after 10 days, just like I did.
+![image](https://github.com/user-attachments/assets/6ff58a4f-1913-48ea-8950-1b9287600611)
+![image](https://github.com/user-attachments/assets/9176ad6b-c9d8-4e71-bcfa-f7ad6de28ae4)
 
-Step 9: Move the "magisk_patched-28001_xxxxx.img" to the same folder as "init_boot_stock.img" on your computer
+### Step 5: Add your account to Mi Unlock
+- Turn off your wifi and make sure you have a working mobile data connection.
+- In **Developer Options**, scroll down until you see **Mi Unlock status**, select it and press **Add account and device**.
 
-Step 10: Enable USB Debugging in Developer Options
+### Step 6: Download the Mi Unlock tool
+- Download the tool from [here](https://server11.dosya.co/cgi-bin/azcl9.cgi/grjkptvs7hgquz5jk62agwrwgl5ot3kmjmlv7podvi/miflash_unlock_en_7.6.727.43.zip).
 
-Step 11: Plug your phone in -> Allow computer on your phone -> Open cmd -> Type 'adb reboot fastboot' and press enter
+### Step 7: Sign in your Xiaomi's account in the Mi Unlock tool
+- After you downloaded the extracted the tool, open **miflash_unlock.exe**.
+- It will prompt you to sign in.
+- After signing in, agree to the disclaimer.
 
-Step 12: Go back to the folder you put your patched init_boot file, hold shift and right click "magisk_patched-28001_xxxxx.img", press copy as path
+### Step 8: Download ADB and Fastboot tools
+- Go to this [site](https://developer.android.com/tools/releases/platform-tools?hl=en) and select the one for Windows.
+- Download it and extract it, you should have a `platform-tools` folder.
+- Navigate to the extracted folder, click on the address bar, and replace everything in the address bar with **cmd**, then press enter and a CMD window should show up.
 
-Step 13: Type ' fastboot flash init_boot_a "D:\Xiaomi 14T\Root\magisk_alpha_patched-28001_p5r8c.img" (the path here is just an example you can paste the path by pressing right click in the cmd) ' and press enter
+### Step 9: Enable USB Debugging
+- Enable **USB Debugging** from **Developer Options**.
 
-Step 14: Type ' fastboot flash init_boot_b "D:\Xiaomi 14T\Root\magisk_alpha_patched-28001_p5r8c.img" (the path here is just an example you can paste the path by pressing right click in the cmd) ' and press enter
+## Step 10: Unlocking the bootloader
+- Plug your phone in, allow computer when prompted on the phone
+- In the CMD window that you opened in step 7, type "adb reboot fastboot".
+- Your phone should reboot and show the orange text FASTBOOT.
+- In the Mi Unlock app, it should says phone connected, now press unlock, after that press unlock anyway.
+- It should says couldn't unlock and you have to wait for the amount of hours that is displayed.
+- After waiting for the specificed amount of hours, do the same unlocking process and this time your phone should be unlocked.
 
-Step 15: Type ' fastboot reboot ' and press enter
+## Rooting
 
-Step 16: You should now be rebooted to the system and rooted
+### Step 1: Obtain ROM Files
+1. Navigate to **About phone -> OS Version** on your device.
+2. Download the firmware from [miuirom.org](https://miuirom.org/) based on your device and OS Version.
 
+### Step 2: Extract Firmware
+- Use tools like **7-Zip** to extract the firmware.
 
-Hiding root:
+### Step 3: Locate the `images` Folder
+- Navigate to the `images` folder within the extracted firmware files.
 
-Step 1: Go to Magisk Alpha Settings -> Hide Magisk App (You can name it to anything you want, I will be using "Settings") -> Disable Zygisk (Zygisk Next Will be used instead as the built-in Zygisk is detected in banking apps like vietnamese banks: Techcombank; MB Bank; VCB Digibank; ...) -> Enforce Denylist Off
+### Step 4: Backup `init_boot.img`
+1. Copy `init_boot.img` to the `platform-tools` that you extracted on step 8 of **unlocking the bootloader**.
+2. Rename it to `init_boot_stock.img` (DO NOT DELETE THIS FILE IN CASE OF A BRICK).
 
-Step 2: In Configure DenyList, choose the app you wish to hide root (Make sure to click the app THEN click the checkbox)
+### Step 5: Transfer to Phone
+- Transfer `init_boot_stock.img` to your phone.
 
-Step 3: Install the following magisk modules in this order: Zygisk Next (https://github.com/Dr-TSNG/ZygiskNext/releases) + Play Intergrity Fix (https://github.com/chiteroman/PlayIntegrityFix/releases) + Tricky Store (https://github.com/5ec1cff/TrickyStore/releases) + Zygisk Assistant (https://github.com/snake-4/Zygisk-Assistant/releases) + LSPosed (https://github.com/JingMatrix/LSPosed/releases) + Shamiko (https://github.com/LSPosed/LSPosed.github.io/releases)
+### Step 6: Install Magisk Alpha
+- Download and install Magisk Alpha from [this link](https://install.appcenter.ms/users/vvb2060/apps/magisk/distribution_groups/public).
 
-Step 4: Reboot
+### Step 7: Patch the `init_boot_stock.img`
+1. Open Magisk Alpha.
+2. Tap **Install** -> **Select and Patch a File**.
+3. Choose `init_boot_stock.img`.
+4. The patched file will appear as something like `magisk_patched-28001_p5r8c.img` in your phone's Download folder.
 
-Step 5: Install the Hide My Applist LSPosed module (https://github.com/Dr-TSNG/Hide-My-Applist/releases)
+### Step 8: Transfer Patched File to PC
+- Move the patched file (`magisk_patched-28001_xxxxx.img`) to the `platform-tools` on your computer.
 
-Step 6: Tap on the LSPosed notification to open the manager, then enable the Hide My Applist modules
+### Step 9: Reboot to Fastboot
+1. Connect your phone to the computer.
+2. Navigate to the `platform-tools` folder, click on the address bar, and replace everything in the address bar with **cmd**, then press enter and a CMD window should show up.
+3. Run the following command in CMD:
+   ```
+   adb.exe reboot fastboot
+   ```
 
-Step 7: Open Hide My Applist -> Template manage -> Create a blacklist template -> Put whatever name you want -> Click the 'Edit list" of "app invisible" -> Check the following app: Hide My Applist, Settings (Hidden Magisk), any LSPosed modules that you will install in the future
+### Step 10: Flash Patched `init_boot`
+1. On the same CMD window, execute the following commands:
+   ```
+   fastboot.exe flash init_boot_a magisk_patched-28001_xxxxx.img (e.g.: fastboot.exe flash init_boot_a magisk_alpha_patched-28001_p5r8c.img)
+   fastboot.exe flash init_boot_b magisk_patched-28001_xxxxx.img (e.g.: fastboot.exe flash init_boot_b magisk_alpha_patched-28001_p5r8c.img)
+   fastboot.exe reboot
+   ```
 
-Step 8: Go back to the first screen -> Click App manage -> Select apps that are detecting root -> Enable Hide -> Work Mode Blacklist (Default) -> Click "Using 0 templates" -> Choose the template you named -> Press back button and you should see enabled under the apps name
+Your device should be rebooted to the system and have root access.
 
-Step 9: Reboot (You don't need to reboot everytime you add an app to the "App manage" or "Template manage")
+---
 
+## Hiding Root
 
-Hiding bootloader status:
+### Step 1: Hide Magisk App
+1. Open Magisk Alpha.
+2. Go to **Settings** -> **Hide Magisk App** (You can name it anything, e.g., to `Settings`).
+3. Disable **Zygisk**.
+4. Turn **Enforce Denylist** OFF.
 
-Step 1: Find the package name of the app you wish to hide bootloader status (You can find it in Hide My Applist -> App Manage -> It should be below the App Name (example:com.xxx.xxx) )
+### Step 2: Configure DenyList
+1. Navigate to **Configure DenyList**.
+2. Select the apps you wish to hide root from (Click the app, then check the checkbox).
 
-Step 2: Install Termux (https://github.com/termux/termux-app/releases/download/v0.118.1/termux-app_v0.118.1+github-debug_arm64-v8a.apk)
+### Step 3: Install Required Magisk Modules
+Install the following modules in this order:
+- [Zygisk Next](https://github.com/Dr-TSNG/ZygiskNext/releases)
+- [Play Integrity Fix](https://github.com/chiteroman/PlayIntegrityFix/releases)
+- [Tricky Store](https://github.com/5ec1cff/TrickyStore/releases)
+- [Zygisk Assistant](https://github.com/snake-4/Zygisk-Assistant/releases)
+- [LSPosed](https://github.com/JingMatrix/LSPosed/releases)
+- [Shamiko](https://github.com/LSPosed/LSPosed.github.io/releases)
 
-Step 3: Open termux -> Type "pkg i tsu -y" (without the quotes) and press enter
+### Step 4: Reboot
 
-Step 4: After the command finished running, type "sudo nano /data/adb/tricky_store/target.txt" and press enter
+### Step 5: Install Hide My Applist
+1. Install the [Hide My Applist module](https://github.com/Dr-TSNG/Hide-My-Applist/releases).
+2. Enable it via LSPosed manager.
 
-Step 5: Press the arrow down icon until the cursor reach the bottom
+### Step 6: Configure "Template manage"
+1. On the home screen of "Hide My Applist", go to **Template manage** and create a blacklist template.
+2. Name it anything and add the following to **Apps Invisible**:
+   - Hide My Applist
+   - Settings (Hidden Magisk App)
+   - Any LSPosed modules you will install in the future.
 
-Step 6: Type in the package name of the app in Step 1
+### Step 7: Configure "App Manage"
+1. On the home screen of "Hide My Applist", go to **App Manage** and select apps detecting root.
+2. Select "Enable Hide" -> Set "Work Mode" to Blacklist (default option) -> Select "Using 0 templates" and choose the template you named.
 
-Step 7: Press CTRL, then press S to save the file
+---
 
-Step 8: Press CTRL, then press X to stop editing
+## Hiding Bootloader Status
 
-Step 9: You can now close termux (Reboot is not neccessary if you already rebooted)
+### Step 1: Identify Package Name
+1. Use Hide My Applist -> **App Manage** to find the package name of the app (e.g., com.xxxxx.xxxxx).
 
+### Step 2: Install Termux
+- Download Termux from [this link](https://github.com/termux/termux-app/releases).
 
-Why you need to install the modules:
+### Step 3: Edit `target.txt`
+1. Open Termux and run the following commands:
+   ```
+   pkg i tsu -y
+   sudo nano /data/adb/tricky_store/target.txt
+   ```
+2. Add the package name to the bottom of the file (Use arrow down move the cursor to the bottom or swipe up to move the cursor).
+3. Save (`CTRL+S`) and exit (`CTRL+X`).
+4. Reboot (Next time you add a new app to /data/adb/tricky_store/target.txt, you don't need to reboot).
+---
 
-- Play Intergrity Fix: It's in the name
+## Why Install These Modules?
 
-- Tricky Store: Hide unlocked bootlooader status
+- **Play Integrity Fix**: Bypass Play Integrity checks.
+- **Tricky Store**: Hides bootloader status.
+- **Zygisk Next**: Better root hiding.
+- **Shamiko & Zygisk Assistant**: Enhance root hiding.
 
-- Zygisk Next: Better for hiding root than built-in Zygisk
+---
 
-- Shamiko & Zygisk Assistant: Also helps hide root
+## Tested and is working on devices:
+- Xiaomi 14T (Global)
+- Redmi K60 Ultra 5G
 
+---
 
-Tested on Xiaomi 14T Global
-
-Images:
-
-![image](https://github.com/user-attachments/assets/9095c40c-f120-4358-b7fa-58d34f73e1f0)
-![image](https://github.com/user-attachments/assets/856057ba-45a0-42de-8e9f-b8b4fa38d03d)
-![image](https://github.com/user-attachments/assets/65b9ccd2-98df-43c0-b530-2bda994d203e)
-![image](https://github.com/user-attachments/assets/32bed38b-407a-4f6c-b583-ae7ec3e6af9c)
-![image](https://github.com/user-attachments/assets/c383aab4-385d-4540-b3e1-15694ac43bf7)
-![image](https://github.com/user-attachments/assets/6cb09d52-a83b-4308-beab-364c1fc42baf)
-![image](https://github.com/user-attachments/assets/a98f5023-4862-40d7-8e8f-09620cd2c4b3)
-![image](https://github.com/user-attachments/assets/74596ec2-21f7-405d-85e0-0006c112499e)
-![image](https://github.com/user-attachments/assets/210824b1-00a3-4c3f-a8fe-ed45364a1479)
-![image](https://github.com/user-attachments/assets/d1fe51d7-650b-4f0c-8830-ff11adca6209)
-![image](https://github.com/user-attachments/assets/83963301-a37f-493c-b3d3-57978bb1eadc)
-![image](https://github.com/user-attachments/assets/4134ecbb-c89c-4e69-82ec-b00429ab0839)
-![image](https://github.com/user-attachments/assets/b59abb74-5f40-497e-affa-17c814925120)
+## Images
+![Image 1](https://github.com/user-attachments/assets/9095c40c-f120-4358-b7fa-58d34f73e1f0)
+![Image 2](https://github.com/user-attachments/assets/856057ba-45a0-42de-8e9f-b8b4fa38d03d)
+![Image 3](https://github.com/user-attachments/assets/65b9ccd2-98df-43c0-b530-2bda994d203e)
+![Image 4](https://github.com/user-attachments/assets/32bed38b-407a-4f6c-b583-ae7ec3e6af9c)
+![Image 5](https://github.com/user-attachments/assets/c383aab4-385d-4540-b3e1-15694ac43bf7)
+![Image 6](https://github.com/user-attachments/assets/6cb09d52-a83b-4308-beab-364c1fc42baf)
+![Image 7](https://github.com/user-attachments/assets/a98f5023-4862-40d7-8e8f-09620cd2c4b3)
+![Image 8](https://github.com/user-attachments/assets/74596ec2-21f7-405d-85e0-0006c112499e)
+![Image 9](https://github.com/user-attachments/assets/210824b1-00a3-4c3f-a8fe-ed45364a1479)
+![Image 10](https://github.com/user-attachments/assets/d1fe51d7-650b-4f0c-8830-ff11adca6209)
+![Image 11](https://github.com/user-attachments/assets/83963301-a37f-493c-b3d3-57978bb1eadc)
+![Image 12](https://github.com/user-attachments/assets/4134ecbb-c89c-4e69-82ec-b00429ab0839)
+![Image 13](https://github.com/user-attachments/assets/b59abb74-5f40-497e-affa-17c814925120)
