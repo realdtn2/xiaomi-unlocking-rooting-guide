@@ -188,7 +188,7 @@ Install the following modules in this order:
 ![Image 2](https://github.com/user-attachments/assets/856057ba-45a0-42de-8e9f-b8b4fa38d03d)
 ![Image 3](https://github.com/user-attachments/assets/65b9ccd2-98df-43c0-b530-2bda994d203e)
 ![Image 4](https://github.com/user-attachments/assets/32bed38b-407a-4f6c-b583-ae7ec3e6af9c)
-![Image 5](https://github.com/user-attachments/assets/c383aab4-385d-4540-b3e1-15694ac43bf7)
+![image](https://github.com/user-attachments/assets/de201456-21d5-4882-bd3e-ceb6b39c56bf)
 ![Image 6](https://github.com/user-attachments/assets/6cb09d52-a83b-4308-beab-364c1fc42baf)
 ![Image 7](https://github.com/user-attachments/assets/a98f5023-4862-40d7-8e8f-09620cd2c4b3)
 ![Image 8](https://github.com/user-attachments/assets/74596ec2-21f7-405d-85e0-0006c112499e)
