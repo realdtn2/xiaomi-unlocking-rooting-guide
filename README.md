@@ -100,8 +100,8 @@ This guide details the steps to root your device, hide the root, and hiding unlo
 ### Step 10: Flash Patched `init_boot`
 1. On the same CMD window, execute the following commands:
    ```
-   fastboot.exe flash init_boot_a magisk_patched-28001_xxxxx.img (e.g.: fastboot.exe flash init_boot_a magisk_alpha_patched-28001_p5r8c.img)
-   fastboot.exe flash init_boot_b magisk_patched-28001_xxxxx.img (e.g.: fastboot.exe flash init_boot_b magisk_alpha_patched-28001_p5r8c.img)
+   fastboot.exe flash init_boot_a magisk_patched-28001_xxxxx.img (e.g.: fastboot.exe flash init_boot_a magisk_patched-28001_p5r8c.img)
+   fastboot.exe flash init_boot_b magisk_patched-28001_xxxxx.img (e.g.: fastboot.exe flash init_boot_b magisk_patched-28001_p5r8c.img)
    fastboot.exe reboot
    ```
 
