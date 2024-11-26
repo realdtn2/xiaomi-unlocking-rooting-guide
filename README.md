@@ -60,6 +60,8 @@ This guide details the steps to root your device, hide the root, and hiding unlo
 
 ## Rooting
 
+### Disclaimer: `init_boot` is for newer device, if your device does not have `init_boot`, replace `init_boot` with `boot` instead.
+
 ### Step 1: Obtain ROM Files
 1. Navigate to **About phone -> OS Version** on your device.
 2. Download the firmware from [miuirom.org](https://miuirom.org/) based on your device and OS Version.
