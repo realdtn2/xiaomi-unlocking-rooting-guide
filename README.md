@@ -176,7 +176,7 @@ Install the following modules in this order:
    ```
 2. Add the package name to the bottom of the file (Use arrow down move the cursor to the bottom or swipe up to move the cursor).
 3. Save (`CTRL+S`) and exit (`CTRL+X`).
-4. Reboot (Next time you add a new app to /data/adb/tricky_store/target.txt, you don't need to reboot;), next time you want to add a new app just type `trickystore` and press enter.
+4. Reboot (You don't need to reboot everytime you add a new app from now on), if you want to add a new app just type `trickystore` and press enter.
 ---
 
 ## Why Install These Modules?
