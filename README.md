@@ -170,11 +170,13 @@ Install the following modules in this order:
 1. Open Termux and run the following commands:
    ```
    pkg i tsu -y
-   sudo nano /data/adb/tricky_store/target.txt
+   echo "alias trickystore='sudo nano /data/adb/tricky_store/target.txt'" >> ~/.bashrc
+   source ~/.bashrc
+   trickystore
    ```
 2. Add the package name to the bottom of the file (Use arrow down move the cursor to the bottom or swipe up to move the cursor).
 3. Save (`CTRL+S`) and exit (`CTRL+X`).
-4. Reboot (Next time you add a new app to /data/adb/tricky_store/target.txt, you don't need to reboot).
+4. Reboot (Next time you add a new app to /data/adb/tricky_store/target.txt, you don't need to reboot;), next time you want to add a new app just type `trickystore` and press enter.
 ---
 
 ## Why Install These Modules?
