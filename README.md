@@ -17,7 +17,7 @@ This guide details the steps to root your device, hide the root, and hiding unlo
 - Enable **OEM Unlocking** from **Developer Options**.
 
 ### Step 2: Reinstall Xiaomi Community
-- Uninstall Xiaomi Community, reboot, then reinstall via the Play Store.
+- Uninstall Xiaomi Community, reboot, then reinstall the latest version of Xiaomi Community via the Play Store.
 
 ### Step 3: Change account's region
 - Sign in into your Xiaomi account through the Xiaomi Community app.
