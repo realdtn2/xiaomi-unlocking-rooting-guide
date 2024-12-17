@@ -90,7 +90,7 @@ This guide details the steps to root your device, hide the root, and hide unlock
 4. The patched file will appear as something like `magisk_patched-28001_p5r8c.img` in your phone's Download folder.
 
 ### Step 8: Transfer Patched File to PC
-- Move the patched file (`magisk_patched-28001_xxxxx.img`) to the `platform-tools` folder on your computer (The patched file will typically be in your phone's Download folder).
+- Move the patched file (`magisk_patched-28001_xxxxx.img`) to the `platform-tools` folder on your computer.
 
 ### Step 9: Reboot to Fastboot
 1. Connect your phone to the computer.
