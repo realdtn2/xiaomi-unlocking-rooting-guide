@@ -52,7 +52,7 @@ This guide details the steps to root your device, hide the root, and hide unlock
 
 ## Step 10: Unlocking the bootloader
 - Plug your phone in and press allow computer when prompted on the phone.
-- In the CMD window that you opened in step 8, type "adb.exe reboot fastboot" and press enter.
+- In the CMD window that you opened in step 8, type `adb.exe reboot fastboot` and press enter.
 - Your phone should reboot and show the text FASTBOOT.
 - In the Mi Unlock app, it should say phone connected. Now press unlock, and then press unlock anyway.
 - It might say couldn't unlock; you have to wait for the amount of hours that is displayed (During this waiting time, DO NOT log out of your Xiaomi account on the phone or the Xiaomi Community app).
