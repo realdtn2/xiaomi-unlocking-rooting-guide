@@ -35,7 +35,7 @@ This guide details the steps to root your device, hide the root, and hiding unlo
 - In **Developer Options**, scroll down until you see **Mi Unlock status**, select it and press **Add account and device**.
 
 ### Step 6: Download the Mi Unlock tool
-- Download the tool from [here](https://dosya.co/zq1jej7lylai/miflash_unlock_en_7.6.727.43.zip.html).
+- Download the latest version of the tool from [here](https://miuirom.org/updates/mi-flash-unlock).
 
 ### Step 7: Sign in your Xiaomi's account in the Mi Unlock tool
 - After you downloaded the tool, extract it, navigate to the extracted folder and open **miflash_unlock.exe**.
