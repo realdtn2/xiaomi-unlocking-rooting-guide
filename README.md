@@ -1,8 +1,6 @@
 
 # Unlocking bootloader, rooting, hiding root, and hiding unlocked bootloader status for Xiaomi 14T (Global), Redmi K60 Ultra 5G, etc. (this guide should work for most of the newer Xiaomi devices with HyperOS)
 
-# Extra: You should be able to use the hiding root part with most Android devices (Xiaomi, Samsung, etc.)
-
 ## Unlocking the bootloader (HyperOS)
 
 ### Warning
@@ -119,7 +117,7 @@ Your device should be rebooted to the system and have root access.
 
 ---
 
-## Hiding Root
+## Hiding Root (You SHOULD be able to use this hiding root section with most Android devices like Xiaomi, Samsung, etc.)
 
 ### Step 1: Hide Magisk App
 1. Open Magisk Alpha.
