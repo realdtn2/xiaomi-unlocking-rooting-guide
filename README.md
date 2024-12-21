@@ -180,7 +180,7 @@ Install the following modules in this order:
 4. Reboot (You don't need to reboot every time you add a new app from now on), if you want to add a new app just type `trickystore` and press enter.
 ---
 
-## Why Install These Modules?
+## Why Install These Modules
 
 - **Play Integrity Fix**: Bypasses Play Integrity checks.
 - **Tricky Store**: Hides bootloader status.
@@ -189,7 +189,7 @@ Install the following modules in this order:
 
 ---
 
-## Tested and found to be working on the following devices:
+## Tested and found to be working on the following devices
 - Xiaomi 14T (Global)
 - Redmi K60 Ultra 5G
 
@@ -213,6 +213,3 @@ Install the following modules in this order:
    <img src="https://github.com/user-attachments/assets/08372f3b-8e40-4293-9e3a-85095f02850d" alt="Image 13" width="200" style="margin-right: 150px;">
    <img src="https://github.com/user-attachments/assets/0935505c-bf30-438c-999f-2ff045da6aa9" alt="Image 13" width="200">
 </p>
-
-
-
