@@ -25,9 +25,10 @@
 ### Step 4: Apply for unlocking
 - At exactly 12:00 AM GMT+8, press "Apply for unlocking" (If you do this too late, you may encounter an "application quota limit reached" error, so ensure you act precisely at 12:00 AM GMT+8).
 - It might display an "Account Error". If that happens, you'll need to retry after 10 days, just like I did.
-<img src="https://github.com/user-attachments/assets/6ff58a4f-1913-48ea-8950-1b9287600611" alt="description" width="300" height="auto">
-![image](https://github.com/user-attachments/assets/6ff58a4f-1913-48ea-8950-1b9287600611)
-![image](https://github.com/user-attachments/assets/9176ad6b-c9d8-4e71-bcfa-f7ad6de28ae4)
+<p>
+   <img src="https://github.com/user-attachments/assets/6ff58a4f-1913-48ea-8950-1b9287600611" alt="Image 1" width="300" height="auto" style="margin-right: 10px;>
+   <img src="https://github.com/user-attachments/assets/9176ad6b-c9d8-4e71-bcfa-f7ad6de28ae4" alt="Image 1" width="300" height="auto" style="margin-right: 10px;>
+</p>
 
 ### Step 5: Add your account to Mi Unlock
 - Turn off your Wi-Fi and ensure you have a working mobile data connection.
