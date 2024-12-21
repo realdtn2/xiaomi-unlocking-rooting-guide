@@ -196,16 +196,18 @@ Install the following modules in this order:
 ---
 
 ## Images
-![Image 1](https://github.com/user-attachments/assets/9095c40c-f120-4358-b7fa-58d34f73e1f0)
-![Image 2](https://github.com/user-attachments/assets/856057ba-45a0-42de-8e9f-b8b4fa38d03d)
-![Image 3](https://github.com/user-attachments/assets/65b9ccd2-98df-43c0-b530-2bda994d203e)
-![Image 4](https://github.com/user-attachments/assets/32bed38b-407a-4f6c-b583-ae7ec3e6af9c)
-![image](https://github.com/user-attachments/assets/de201456-21d5-4882-bd3e-ceb6b39c56bf)
-![Image 6](https://github.com/user-attachments/assets/6cb09d52-a83b-4308-beab-364c1fc42baf)
-![Image 7](https://github.com/user-attachments/assets/a98f5023-4862-40d7-8e8f-09620cd2c4b3)
-![Image 8](https://github.com/user-attachments/assets/74596ec2-21f7-405d-85e0-0006c112499e)
-![Image 9](https://github.com/user-attachments/assets/210824b1-00a3-4c3f-a8fe-ed45364a1479)
-![Image 10](https://github.com/user-attachments/assets/d1fe51d7-650b-4f0c-8830-ff11adca6209)
-![Image 11](https://github.com/user-attachments/assets/83963301-a37f-493c-b3d3-57978bb1eadc)
-![Image 12](https://github.com/user-attachments/assets/4134ecbb-c89c-4e69-82ec-b00429ab0839)
-![Image 13](https://github.com/user-attachments/assets/b59abb74-5f40-497e-affa-17c814925120)
+<p>
+   <img src="https://github.com/user-attachments/assets/9095c40c-f120-4358-b7fa-58d34f73e1f0" alt="Image 1" width="200" style="margin-right: 10px;">
+   <img src="https://github.com/user-attachments/assets/856057ba-45a0-42de-8e9f-b8b4fa38d03d" alt="Image 2" width="200" style="margin-right: 10px;">
+   <img src="https://github.com/user-attachments/assets/65b9ccd2-98df-43c0-b530-2bda994d203e" alt="Image 3" width="200" style="margin-right: 10px;">
+   <img src="https://github.com/user-attachments/assets/32bed38b-407a-4f6c-b583-ae7ec3e6af9c" alt="Image 4" width="200" style="margin-right: 10px;">
+   <img src="https://github.com/user-attachments/assets/de201456-21d5-4882-bd3e-ceb6b39c56bf" alt="Image 5" width="200" style="margin-right: 10px;">
+   <img src="https://github.com/user-attachments/assets/6cb09d52-a83b-4308-beab-364c1fc42baf" alt="Image 6" width="200" style="margin-right: 10px;">
+   <img src="https://github.com/user-attachments/assets/a98f5023-4862-40d7-8e8f-09620cd2c4b3" alt="Image 7" width="200" style="margin-right: 10px;">
+   <img src="https://github.com/user-attachments/assets/74596ec2-21f7-405d-85e0-0006c112499e" alt="Image 8" width="200" style="margin-right: 10px;">
+   <img src="https://github.com/user-attachments/assets/210824b1-00a3-4c3f-a8fe-ed45364a1479" alt="Image 9" width="200" style="margin-right: 10px;">
+   <img src="https://github.com/user-attachments/assets/d1fe51d7-650b-4f0c-8830-ff11adca6209" alt="Image 10" width="200" style="margin-right: 10px;">
+   <img src="https://github.com/user-attachments/assets/83963301-a37f-493c-b3d3-57978bb1eadc" alt="Image 11" width="200" style="margin-right: 10px;">
+   <img src="https://github.com/user-attachments/assets/4134ecbb-c89c-4e69-82ec-b00429ab0839" alt="Image 12" width="200" style="margin-right: 10px;">
+   <img src="https://github.com/user-attachments/assets/b59abb74-5f40-497e-affa-17c814925120" alt="Image 13" width="200">
+</p>
