@@ -65,7 +65,7 @@
 
 ### Step 1: Obtain ROM Files
 1. Navigate to **About phone -> OS Version** on your device.
-2. Download the firmware from [miuirom.org](https://miuirom.org/) corresponding to your device and OS Version.
+2. Download the firmware (Fastboot ROM) from [miuirom.org](https://miuirom.org/) corresponding to your device and OS Version.
 
 ### Step 2: Extract Firmware
 - Use tools like **7-Zip** to extract the firmware.
