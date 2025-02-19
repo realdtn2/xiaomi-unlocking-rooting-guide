@@ -124,6 +124,7 @@ Your device should be rebooted to the system and have root access.
 
 ## Hiding Root (You SHOULD be able to use this hiding root section with most Android devices like Xiaomi, Samsung, etc.)
 
+
 ### Step 1: Hide Magisk App
 1. Open Magisk Alpha.
 2. Go to **Settings** -> **Hide Magisk App** (You can name it anything, e.g., `Settings`).
@@ -153,7 +154,7 @@ Install the following modules in this order:
 1. On the home screen of "Hide My Applist", go to **Template manage** and create a blacklist template.
 2. Name it anything, and add the following to **Apps Invisible**:
    - Hide My Applist
-   - Settings (Hidden Magisk App)
+   - Settings (Hidden Magisk App) (If you unhide the Magisk Alpha app, you have to add it back when you hide it again)
    - Any LSPosed modules you will install in the future
 
 ### Step 7: Configure "App Manage"
@@ -195,6 +196,7 @@ Install the following modules in this order:
 ## Tested and found to be working on the following devices
 - Xiaomi 14T (Global) (HyperOS)
 - Redmi K60 Ultra 5G (HyperOS/HyperOS 2.0)
+- Xiaomi Mi 11 Ultra (HyperOS)
 
 ---
 
