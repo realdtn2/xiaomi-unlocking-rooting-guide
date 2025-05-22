@@ -218,8 +218,8 @@ Make sure the [Tricky Store](https://github.com/5ec1cff/TrickyStore/releases) an
 
 ## Why Install These Modules
 
-- **Play Integrity Fix**: Bypasses Play Integrity checks.
-- **Tricky Store**: Hides bootloader status.
+- **Play Integrity Fix & Tricky Store Addon**: Bypasses Play Integrity checks.
+- **Tricky Store & Tricky Store Addon**: Hides bootloader status.
 - **Zygisk Next**: Better root hiding.
 - **Shamiko & Zygisk Assistant**: Enhances root hiding.
 
