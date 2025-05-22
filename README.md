@@ -186,6 +186,10 @@ Make sure you already have the [Play Integrity Fix](https://github.com/chiteroma
 ### Note: Do not check Play Integrity too frequently, or preferably, not at all. If you check too frequently, Google will get suspicious.
 ### Source: https://www.reddit.com/r/Magisk/comments/1js8qm3/tutorial_guide_on_fixing_play_integrity_on_rooted
 
+<p>
+   <img src="https://github.com/user-attachments/assets/af8dcfd8-8ffa-4694-b500-63b78e527316" alt="Image 1" width="200">
+</p>
+
 > <span style="opacity:0.6"> Some custom ROMS spoof old fingerprints (PIF's) by default, you'd need to disable that functionality if your rom has it built in, I can't help much for this part.</span>
 
 
