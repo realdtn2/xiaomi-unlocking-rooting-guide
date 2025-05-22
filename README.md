@@ -1,6 +1,8 @@
 
 # Unlocking bootloader, rooting, hiding root, and hiding unlocked bootloader status for Xiaomi 14T (Global), Redmi K60 Ultra 5G, etc. (this guide should work for most of the newer Xiaomi devices with HyperOS/HyperOS 2.0)
 
+---
+
 ## Unlocking the bootloader (HyperOS)
 
 ### Warning
@@ -57,6 +59,8 @@
 - In the Mi Unlock app, it should say phone connected. Now press unlock, and then press unlock anyway.
 - It might say couldn't unlock; you have to wait for the amount of hours that is displayed (During this waiting time, DO NOT log out of your Xiaomi account on the phone or the Xiaomi Community app).
 - After waiting for the specified amount of hours, do the same unlocking process and this time your phone should be unlocked.
+
+---
 
 ## Rooting
 
@@ -198,23 +202,18 @@ Make sure you already have the [Play Integrity Fix](https://github.com/chiteroma
 
 ## Hiding Bootloader Status
 
-### Step 1: Identify Package Name
-1. Use Hide My Applist -> **App Manage** to find the package name of the app (e.g., com.xxxxx.xxxxx).
+### Step 1: Install Required Magisk Modules
+Make sure the [Tricky Store](https://github.com/5ec1cff/TrickyStore/releases) and [Tricky Store Addon](https://github.com/KOWX712/Tricky-Addon-Update-Target-List/releases) modules are installed.
 
-### Step 2: Install Termux
-- Download Termux from [this link](https://github.com/termux/termux-app/releases).
+### Step 2: Configure Tricky Store
+1. Open the Magisk Alpha app.
+2. Go to **Modules**, click on the **Action** button of the **Tricky Store** module, this will install **KsuWebUI** if you do not have **KsuWebUI** or **MMRL** installed.
 
-### Step 3: Edit `target.txt`
-1. Open the Termux app, copy and paste the following commands, then run it:
-   ```
-   pkg i tsu -y
-   echo "alias trickystore='sudo nano /data/adb/tricky_store/target.txt'" >> ~/.bashrc
-   source ~/.bashrc
-   trickystore
-   ```
-2. Add the package name to the bottom of the file (move the cursor to the bottom of the file, use the arrow keys or swipe up/swipe down to move the cursor).
-3. Save (`CTRL+S`) and exit (`CTRL+X`).
-4. Reboot (You don't need to reboot every time you add a new app from now on), if you want to add a new app just type `trickystore` and press enter.
+### Step 3: Adding Apps
+1. Open the **KsuWebUI** app and click on **Tricky Store**.
+2. You can search for the apps you'd like to hide bootloader status from, then check the box for it.
+3. Hit the blue **Save** button at the center bottom of the screen, scroll to top if you don't see the button.
+
 ---
 
 ## Why Install These Modules
