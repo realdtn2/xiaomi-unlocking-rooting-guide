@@ -187,7 +187,8 @@ Make sure you already have the [Play Integrity Fix](https://github.com/chiteroma
 ### Source: https://www.reddit.com/r/Magisk/comments/1js8qm3/tutorial_guide_on_fixing_play_integrity_on_rooted
 
 <p>
-   <img src="https://github.com/user-attachments/assets/af8dcfd8-8ffa-4694-b500-63b78e527316" alt="Image 1" width="200">
+   <img src="https://github.com/user-attachments/assets/af8dcfd8-8ffa-4694-b500-63b78e527316" alt="Image 1" width="200" style="margin-right: 150px;">
+   <img src="https://github.com/user-attachments/assets/7fc8a21b-9cc6-482a-8751-4cd98e20e6da" alt="Image 2" width="200">
 </p>
 
 > <span style="opacity:0.6"> Some custom ROMS spoof old fingerprints (PIF's) by default, you'd need to disable that functionality if your rom has it built in, I can't help much for this part.</span>
