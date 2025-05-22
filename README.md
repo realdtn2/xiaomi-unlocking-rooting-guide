@@ -84,7 +84,7 @@
 - Download and install Magisk Alpha from [this link](https://install.appcenter.ms/users/vvb2060/apps/magisk/distribution_groups/public).
 
 ### Step 7: Patch the `init_boot_stock.img`
-1. Open Magisk Alpha.
+1. Open the Magisk Alpha app.
 2. Tap **Install** -> **Select and Patch a File**.
 3. Choose `init_boot_stock.img`.
 4. The patched file will appear as something like `magisk_patched-28001_p5r8c.img` in your phone's Download folder.
@@ -126,7 +126,7 @@ Your device should be rebooted to the system and have root access.
 
 
 ### Step 1: Hide Magisk App
-1. Open Magisk Alpha.
+1. Open the Magisk Alpha app.
 2. Go to **Settings** -> **Hide Magisk App** (You can name it anything, e.g., `Settings`).
 3. Disable **Zygisk**.
 4. Turn **Enforce Denylist** OFF.
@@ -163,6 +163,34 @@ Install the following modules in this order:
 
 ---
 
+## Play Integrity Fix (MAY 2025)
+
+As of May 2025, Google has rolled out major changes to the Play Integrity API, follow these steps to fix it:
+### Step 1: Install Required Magisk Module
+Make sure you already have the [Play Integrity Fix](https://github.com/chiteroman/PlayIntegrityFix/releases) and [Tricky Store](https://github.com/5ec1cff/TrickyStore/releases) modules installed in Step 3 of **Hiding Root*, then install the [Tricky Store Addon](https://github.com/KOWX712/Tricky-Addon-Update-Target-List/releases) module.
+
+### Step 2: Reboot
+
+### Step 3: Configure Tricky Store
+1. Open the Magisk Alpha app.
+2. Go to **Modules**, click on the action button of the **Tricky Store** module, this will install **KsuWebUI** if you do not have **KsuWebUI** or **MMRL** installed.
+3. Open the **KsuWebUI** and click on **Tricky Store**.
+4. Make sure that **Google Play Services**, **Google Play Store**, and **Google Services Framework** are checked.
+5. Click the **Menu** button in the top right, and select **Set Valid Keybox**
+6. Click the **Menu** button in the top right again, then select **Set Security Patch** -> **Get Security Patch Date**:
+- If it succeeds, click on **Save**
+- If it fails, click on **Auto**
+
+### Step 4: Reboot
+
+### Note: Do not check Play Integrity too frequently, or preferably, not at all. If you check too frequently, Google will get suspicious.
+### Source: https://www.reddit.com/r/Magisk/comments/1js8qm3/tutorial_guide_on_fixing_play_integrity_on_rooted
+
+> <span style="opacity:0.6"> Some custom ROMS spoof old fingerprints (PIF's) by default, you'd need to disable that functionality if your rom has it built in, I can't help much for this part.</span>
+
+
+---
+
 ## Hiding Bootloader Status
 
 ### Step 1: Identify Package Name
@@ -172,7 +200,7 @@ Install the following modules in this order:
 - Download Termux from [this link](https://github.com/termux/termux-app/releases).
 
 ### Step 3: Edit `target.txt`
-1. Open Termux and run the following commands:
+1. Open the Termux app, copy and paste the following commands, then run it:
    ```
    pkg i tsu -y
    echo "alias trickystore='sudo nano /data/adb/tricky_store/target.txt'" >> ~/.bashrc
