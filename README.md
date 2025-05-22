@@ -226,7 +226,7 @@ Make sure you already have the [Play Integrity Fix](https://github.com/chiteroma
 
 ---
 
-## Tested and found to be working on the following devices
+## Tested and found to be working on the following devices (I'd appreciate it if you guys could report it back to me your device if in **Issues** if it works for you)
 - Xiaomi 14T (Global) (HyperOS)
 - Redmi K60 Ultra 5G (HyperOS/HyperOS 2.0)
 - Xiaomi Mi 11 Ultra (HyperOS)
