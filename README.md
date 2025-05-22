@@ -86,6 +86,7 @@
 
 ### Step 6: Install Magisk Alpha
 - Download and install Magisk Alpha from [this link](https://install.appcenter.ms/users/vvb2060/apps/magisk/distribution_groups/public).
+- If the site is down, please try [Magisk Alpha (28102)](https://github.com/realdtn2/xiaomi-unlocking-rooting-guide/raw/refs/heads/main/magisk_alpha-28102.apk)
 
 ### Step 7: Patch the `init_boot_stock.img`
 1. Open the Magisk Alpha app.
