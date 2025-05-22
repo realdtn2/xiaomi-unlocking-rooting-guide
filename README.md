@@ -179,7 +179,7 @@ Make sure you already have the [Play Integrity Fix](https://github.com/chiteroma
 1. Open the Magisk Alpha app.
 2. Go to **Modules**, click on the **Action** button of the **Tricky Store** module, this will install **KsuWebUI** if you do not have **KsuWebUI** or **MMRL** installed.
 3. Open the **KsuWebUI** app and click on **Tricky Store**.
-4. Make sure that **Google Play Services**, **Google Play Store**, and **Google Services Framework** are checked.
+4. Make sure that **Google Play Services**, **Google Play Store**, and **Google Services Framework** are checked, then hit the blue **Save** button at the center bottom of the screen, scroll to top if you don't see the button.
 5. Click the **Menu** button in the top right, and select **Set Valid Keybox**
 6. Click the **Menu** button in the top right again, then select **Set Security Patch** -> **Get Security Patch Date**:
 - If it succeeds, click on **Save**
