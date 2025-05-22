@@ -167,7 +167,7 @@ Install the following modules in this order:
 
 As of May 2025, Google has rolled out major changes to the Play Integrity API, follow these steps to fix it:
 ### Step 1: Install Required Magisk Modules
-Make sure you already have the [Play Integrity Fix](https://github.com/chiteroman/PlayIntegrityFix/releases) and [Tricky Store](https://github.com/5ec1cff/TrickyStore/releases) modules installed in Step 3 of **Hiding Root*, then install the [Tricky Store Addon](https://github.com/KOWX712/Tricky-Addon-Update-Target-List/releases) module.
+Make sure you already have the [Play Integrity Fix](https://github.com/chiteroman/PlayIntegrityFix/releases) and [Tricky Store](https://github.com/5ec1cff/TrickyStore/releases) modules installed in Step 3 of **Hiding Root**, then install the [Tricky Store Addon](https://github.com/KOWX712/Tricky-Addon-Update-Target-List/releases) module.
 
 ### Step 2: Reboot
 
