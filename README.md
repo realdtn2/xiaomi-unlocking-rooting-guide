@@ -143,7 +143,6 @@ Your device should be rebooted to the system and have root access.
 ### Step 3: Install Required Magisk Modules
 Install the following modules in this order:
 - [Zygisk Next](https://github.com/Dr-TSNG/ZygiskNext/releases)
-- [Play Integrity Fix](https://github.com/chiteroman/PlayIntegrityFix/releases)
 - [Tricky Store](https://github.com/5ec1cff/TrickyStore/releases)
 - [Zygisk Assistant](https://github.com/snake-4/Zygisk-Assistant/releases)
 - [LSPosed](https://github.com/JingMatrix/LSPosed/releases)
@@ -172,24 +171,33 @@ Install the following modules in this order:
 
 As of May 2025, Google has rolled out major changes to the Play Integrity API, follow these steps to fix it:
 ### Step 1: Install Required Magisk Modules
-Make sure you already have the [Play Integrity Fix](https://github.com/chiteroman/PlayIntegrityFix/releases) and [Tricky Store](https://github.com/5ec1cff/TrickyStore/releases) modules installed in Step 3 of **Hiding Root**, then install the [Tricky Store Addon](https://github.com/KOWX712/Tricky-Addon-Update-Target-List/releases) module.
+Make sure you already have the [Play Integrity Fix](https://github.com/chiteroman/PlayIntegrityFix/releases) and [Tricky Store](https://github.com/5ec1cff/TrickyStore/releases) modules installed in Step 3 of **Hiding Root**, then install the following modules:
+- [PlayIntegrityFix](https://github.com/KOWX712/PlayIntegrityFix/releases) (download the newest **inject-s** version)
+- [Tricky Store Addon](https://github.com/KOWX712/Tricky-Addon-Update-Target-List/releases)
+- [Busybox](https://mmrl.dev/repository/grdoglgmr/busybox-ndk)
+- [Yuri Keybox Manager](https://github.com/dpejoh/yurikey)
 
 ### Step 2: Reboot
 
-### Step 3: Configure Tricky Store
+### Step 3: Configure PlayIntegrityFix
+1. Open the Magisk Alpha app.
+2. Go to **Modules**, click on the **Action** button of the **PlayIntegrityFix** module.
+3. Click on the **Advanced** button, and make sure **Use preview fingerprint**, **Spoof Build**, **Spoof Provider**, **Spoof Props**, and **Spoof Signature** are toggled on.
+4. Click on the **Fetch pif.json** button, and wait for it to be done
+
+### Step 4: Configure Yuri Keybox Manager
 1. Open the Magisk Alpha app.
 2. Go to **Modules**, click on the **Action** button of the **Tricky Store** module, this will install **KsuWebUI** if you do not have **KsuWebUI** or **MMRL** installed.
-3. Open the **KsuWebUI** app and click on **Tricky Store**.
-4. Make sure that **Google Play Services**, **Google Play Store**, and **Google Services Framework** are checked, then hit the blue **Save** button at the center bottom of the screen, scroll to top if you don't see the button.
-5. Click the **Menu** button in the top right, and select **Set Valid Keybox**
-6. Click the **Menu** button in the top right again, then select **Set Security Patch** -> **Get Security Patch Date**:
-- If it succeeds, click on **Save**
-- If it fails, click on **Auto**
+3. Open the **KsuWebUI** app and click on **Yuri Keybox Manager**.
+4. Go to the **Menu** tab
+5. Click **Set Up Yuri Keybox**, **Set Up Security Patch**, **Set Up Verified Boothash**, **Set up Target.txt**, and **Force Stop & Clear Data Play Store**
 
-### Step 4: Reboot
+### Step 5: Reboot
 
-### Note: Do not check Play Integrity too frequently, or preferably, not at all. If you check too frequently, Google will get suspicious.
-### Source: https://www.reddit.com/r/Magisk/comments/1js8qm3/tutorial_guide_on_fixing_play_integrity_on_rooted
+### Step 6: Check the Integrity
+- Use this [app](https://play.google.com/store/apps/details?id=gr.nikolasspyr.integritycheck&hl=en)
+
+### Note: Do not change keybox too frequently, or preferably, not at all. If you check too frequently, Google will get suspicious.
 
 <p>
    <img src="https://github.com/user-attachments/assets/af8dcfd8-8ffa-4694-b500-63b78e527316" alt="Image 1" width="200">
