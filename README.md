@@ -1,5 +1,5 @@
 
-# Unlocking bootloader, rooting, hiding root, and hiding unlocked bootloader status for Xiaomi devices (this guide should work for most of the newer Xiaomi devices with HyperOS/HyperOS 2.0)
+# Unlocking bootloader, rooting, hiding root, Play Integrity, and hiding unlocked bootloader status for Xiaomi devices (this guide should work for most of the newer Xiaomi devices with HyperOS/HyperOS 2.0)
 
 ---
 
