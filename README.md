@@ -198,6 +198,7 @@ Make sure you already have the [Play Integrity Fix](https://github.com/chiteroma
 - Use this [app](https://play.google.com/store/apps/details?id=gr.nikolasspyr.integritycheck&hl=en)
 
 ### Note: Do not change keybox too frequently, or preferably, not at all. If you check too frequently, Google will get suspicious.
+### Reminder: If you suddenly fail to pass Play Integrity, do Step 3 & 4 again.
 
 <p>
    <img src="https://github.com/user-attachments/assets/af8dcfd8-8ffa-4694-b500-63b78e527316" alt="Image 1" width="200">
