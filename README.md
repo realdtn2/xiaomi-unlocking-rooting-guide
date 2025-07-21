@@ -10,7 +10,7 @@
 
 ### Requirements
 - Your Xiaomi account must be over 30 days old.
-- Enable **Find device** in **Xiaomi Cloud** in the Settings app (this may not be necessary).
+- Enable **Find device** in **Xiaomi Cloud** in the Settings app (this may not be necessary, but you should do it to be sure).
 
 ### Step 1: Enable OEM Unlocking
 - In the Settings app, go to  **About phone**, and then tap the **OS version** 5 times.
