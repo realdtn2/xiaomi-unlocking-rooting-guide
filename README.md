@@ -175,7 +175,7 @@ Make sure you already have the [Play Integrity Fix](https://github.com/chiteroma
 - [PlayIntegrityFix](https://github.com/KOWX712/PlayIntegrityFix/releases) (download the newest **inject-s** version)
 - [Tricky Store Addon](https://github.com/KOWX712/Tricky-Addon-Update-Target-List/releases)
 - [Busybox](https://mmrl.dev/repository/grdoglgmr/busybox-ndk)
-- [Yuri Keybox Manager](https://github.com/dpejoh/yurikey)
+- [Yuri Keybox Manager](https://github.com/dpejoh/yurikey/releases)
 
 ### Step 2: Reboot
 
