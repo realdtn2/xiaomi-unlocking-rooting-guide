@@ -225,15 +225,6 @@ Make sure the [Tricky Store](https://github.com/5ec1cff/TrickyStore/releases) an
 
 ---
 
-## Why Install These Modules
-
-- **Play Integrity Fix & Tricky Store Addon**: Bypasses Play Integrity checks.
-- **Tricky Store & Tricky Store Addon**: Hides bootloader status.
-- **Zygisk Next**: Better root hiding.
-- **Shamiko & Zygisk Assistant**: Enhances root hiding.
-
----
-
 ## Tested and found to be working on the following devices (I'd appreciate it if you guys could report it back to me your device if in **Issues** if it works for you)
 - Xiaomi 14T (Global) (HyperOS)
 - Redmi K60 Ultra 5G (HyperOS/HyperOS 2.0)
