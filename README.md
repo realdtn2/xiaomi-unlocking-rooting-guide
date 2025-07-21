@@ -1,5 +1,5 @@
 
-# Unlocking bootloader, rooting, hiding root, and hiding unlocked bootloader status for Xiaomi 14T (Global), Redmi K60 Ultra 5G, etc. (this guide should work for most of the newer Xiaomi devices with HyperOS/HyperOS 2.0)
+# Unlocking bootloader, rooting, hiding root, and hiding unlocked bootloader status for Xiaomi devices (this guide should work for most of the newer Xiaomi devices with HyperOS/HyperOS 2.0)
 
 ---
 
