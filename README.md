@@ -178,16 +178,18 @@ Make sure you already have the [Tricky Store](https://github.com/5ec1cff/TrickyS
 
 ### Step 2: Reboot
 
+### Step 3: Install KsuWebUI
+- Download and install the lastest version of KsuWebUI from [here](https://github.com/5ec1cff/KsuWebUIStandalone/releases).
+
 ### Step 3: Configure PlayIntegrityFix
-1. Open the Magisk Alpha app.
-2. Go to **Modules**, click on the **Action** button of the **PlayIntegrityFix** module.
-3. Click on the **Advanced** button, and make sure **Use preview fingerprint**, **Spoof Build**, **Spoof Provider**, **Spoof Props**, and **Spoof Signature** are toggled on.
+1. Open the KsuWebUI app.
+2. Click on the **PlayIntegrityFix** module.
+3. Click on the **Advanced** button, and make sure **Spoof Build**, **Spoof Build (Play Store)**, **Spoof Props**, **Spoof Provider**, and **Spoof Signature** are toggled on.
 4. Click on the **Fetch pif.json** button, and wait for it to be done
 
 ### Step 4: Configure Yuri Keybox Manager
-1. Open the Magisk Alpha app.
-2. Go to **Modules**, click on the **Action** button of the **Tricky Store** module, this will install **KsuWebUI** if you do not have **KsuWebUI** or **MMRL** installed.
-3. Open the **KsuWebUI** app and click on **Yuri Keybox Manager**.
+1. Open the KsuWebUI app.
+3. Click on the **Yuri Keybox Manager** module.
 4. Go to the **Menu** tab
 5. Click **Set Up Yuri Keybox**, **Set Up Security Patch**, **Set Up Verified Boothash**, **Set up Target.txt**, and **Force Stop & Clear Data Play Store**
 
@@ -213,14 +215,11 @@ Make sure you already have the [Tricky Store](https://github.com/5ec1cff/TrickyS
 ### Step 1: Install Required Magisk Modules
 Make sure the [Tricky Store](https://github.com/5ec1cff/TrickyStore/releases) and [Tricky Store Addon](https://github.com/KOWX712/Tricky-Addon-Update-Target-List/releases) modules are installed.
 
-### Step 2: Configure Tricky Store
-1. Open the Magisk Alpha app.
-2. Go to **Modules**, click on the **Action** button of the **Tricky Store** module, this will install **KsuWebUI** if you do not have **KsuWebUI** or **MMRL** installed.
-
-### Step 3: Adding Apps
-1. Open the **KsuWebUI** app and click on **Tricky Store**.
-2. You can search for the apps you'd like to hide bootloader status from, then check the box for it.
-3. Hit the blue **Save** button at the center bottom of the screen, scroll to top if you don't see the button.
+### Step 2: Adding Apps
+1. Open the **KsuWebUI**
+2. Click on the **Tricky Store** module.
+3. You can search for the apps you'd like to hide bootloader status from, then check the box for it.
+4. Hit the blue **Save** button at the center bottom of the screen, scroll to top if you don't see the button.
 
 ---
 
