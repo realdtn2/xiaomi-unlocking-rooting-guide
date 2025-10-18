@@ -111,13 +111,13 @@
    fastboot.exe flash init_boot_b magisk_patched-28001_xxxxx.img (e.g., fastboot.exe flash init_boot_b magisk_patched-28001_p5r8c.img)
    fastboot.exe reboot
    ```
-   For older devices without `init_boot` ***(DO NOT FOLLOW THESE COMMANDS IF YOUR DEVICE ALREADY HAVE `init_boot` !!!!!!!!!!!!!!!!!!!!!)***:
+   For ***OLD DEVICES*** without `init_boot` ***(DO NOT FOLLOW THESE COMMANDS IF YOUR DEVICE ALREADY HAVE `init_boot` !!!!!!!!!!!!!!!!!!!!!)***:
    ```
    fastboot.exe flash boot_a magisk_patched-28001_xxxxx.img (e.g., fastboot.exe flash boot_a magisk_patched-28001_p5r8c.img)
    fastboot.exe flash boot_b magisk_patched-28001_xxxxx.img (e.g., fastboot.exe flash boot_b magisk_patched-28001_p5r8c.img)
    fastboot.exe reboot
    ```
-   For older devices without `init_boot`, if there's an error, try running this command:
+   For ***OLD DEVICES*** without `init_boot`, if there's an error, try running this command ***(DO NOT FOLLOW THESE COMMANDS IF YOUR DEVICE ALREADY HAVE `init_boot` !!!!!!!!!!!!!!!!!!!!!)***::
    ```
    fastboot.exe --disable-verity --disable-verification flash vbmeta vbmeta.img (vbmeta.img is from the firmware you downloaded)
    ```
