@@ -227,6 +227,7 @@ Make sure the [Tricky Store](https://github.com/5ec1cff/TrickyStore/releases) an
 - Xiaomi 14T (Global) (HyperOS)
 - Redmi K60 Ultra 5G (HyperOS/HyperOS 2.0)
 - Xiaomi Mi 11 Ultra (HyperOS)
+- Xiaomi 12 (Lineage OS 22.2)
 
 ---
 
