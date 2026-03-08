@@ -24,29 +24,35 @@
 
 ### Step 4: Apply for unlocking
 - At exactly 12:00 AM GMT+8, press "Apply for unlocking" (If you do this too late, you may encounter an "application quota limit reached" error, so ensure you act precisely at 12:00 AM GMT+8, you can use this [site](https://time.is/GMT+8) to check the time).
-- It might display an "Account Error". If that happens, you'll need to retry after 10 days.
+- It might display an "Account Error" window. If that happens, you'll need to retry after 10 days.
+**Tip:** If you cannot apply for unlocking or encounter quota limit with this guide, you can follow another method using [this Python automation script](https://xdaforums.com/t/how-to-unlock-bootloader-on-xiaomi-hyperos-all-devices-except-cn.4654009/#post-89311595) to automate the button press and run multiple instances simultaneously to improve your chances.
 
-### Step 5: Add your account to Mi Unlock
+### Step 5: Preparing for bootloader unlock
+- Logout of your Xiaomi account within your phone's settings.
+- Reboot your phone.
+- Log back into your Xiaomi account in the settings.
+
+### Step 6: Add your account to Mi Unlock
 - Turn off your Wi-Fi and ensure you have a working mobile data connection.
 - In **Developer Options**, scroll down until you see **Mi Unlock status**, select it, and press **Add account and device**.
 
-### Step 6: Download the Mi Unlock tool
+### Step 7: Download the Mi Unlock tool
 - Download the latest version of the tool from [here](https://miuirom.org/updates/mi-flash-unlock).
 
-### Step 7: Sign in to your Xiaomi account in the Mi Unlock tool
+### Step 8: Sign in to your Xiaomi account in the Mi Unlock tool
 - After downloading the tool, extract it, navigate to the extracted folder, and open **miflash_unlock.exe**.
 - It will prompt you to sign in.
 - After signing in, agree to the disclaimer.
 
-### Step 8: Download ADB and Fastboot tools
+### Step 9: Download ADB and Fastboot tools
 - Go to this [site](https://developer.android.com/tools/releases/platform-tools?hl=en) and select the one for Windows.
 - Download it and extract it. You should now see a folder named `platform-tools`.
 - Navigate to the extracted folder, click on the address bar, and replace everything in the address bar with **cmd**, and then press enter and a CMD window should show up.
 
-### Step 9: Enable USB Debugging
+### Step 10: Enable USB Debugging
 - Enable **USB Debugging** from **Developer Options**.
 
-## Step 10: Unlocking the bootloader
+## Step 11: Unlocking the bootloader
 - Plug your phone in and press allow computer when prompted on the phone.
 - In the CMD window that you opened in step 8, type `adb.exe reboot fastboot` and press enter.
 - Your phone should reboot and show the text FASTBOOT.
@@ -218,10 +224,12 @@ Make sure the [Tricky Store](https://github.com/5ec1cff/TrickyStore/releases) an
 ---
 
 ## Tested and found to be working on the following devices (I'd appreciate it if you guys could report it back to me your device if in **Issues** if it works for you)
-- Xiaomi 14T (Global) (HyperOS)
-- Redmi K60 Ultra 5G (HyperOS/HyperOS 2.0)
+- Xiaomi 14T (HyperOS)
+- Xiaomi Redmi K60 Ultra 5G (HyperOS/HyperOS 2.0)
 - Xiaomi Mi 11 Ultra (HyperOS)
 - Xiaomi 12 (Lineage OS 22.2)
+- Xiaomi 13 Ultra (HyperOS 2.0)
+- Xiaomi Redmi Note 15 5G (HyperOS 2.0)
 
 ---
 
