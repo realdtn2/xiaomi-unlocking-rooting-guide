@@ -25,7 +25,7 @@
 ### Step 4: Apply for unlocking
 - At exactly 12:00 AM GMT+8, press "Apply for unlocking" (If you do this too late, you may encounter an "application quota limit reached" error, so ensure you act precisely at 12:00 AM GMT+8, you can use this [site](https://time.is/GMT+8) to check the time).
 - It might display an "Account Error" window. If that happens, you'll need to retry after 10 days.
-**Tip:** If you cannot apply for unlocking or encounter quota limit with this guide, you can follow another method using [this Python automation script](https://xdaforums.com/t/how-to-unlock-bootloader-on-xiaomi-hyperos-all-devices-except-cn.4654009/#post-89311595) to automate the button press and run multiple instances simultaneously to improve your chances.
+- **Tip:** If you cannot apply for unlocking or encounter quota limit with this guide, you can follow another method using [this Python automation script](https://xdaforums.com/t/how-to-unlock-bootloader-on-xiaomi-hyperos-all-devices-except-cn.4654009/#post-89311595) to automate the button press and run multiple instances simultaneously to improve your chances.
 
 ### Step 5: Preparing for bootloader unlock
 - Logout of your Xiaomi account within your phone's settings.
