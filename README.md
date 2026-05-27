@@ -1,5 +1,5 @@
 
-# Unlocking bootloader, rooting, hiding root, Play Integrity, and hiding unlocked bootloader status for Xiaomi devices (this guide should work for most of the newer Xiaomi devices with HyperOS/HyperOS 2.0)
+# Unlocking bootloader, rooting, hiding root, Play Integrity, and hiding unlocked bootloader status for Xiaomi devices (this guide should work for most of the newer Xiaomi devices with HyperOS/HyperOS 2.0/HyperOS 3.0)
 
 ## Unlocking the bootloader (HyperOS)
 
@@ -230,6 +230,7 @@ Make sure the [Tricky Store](https://github.com/5ec1cff/TrickyStore/releases) an
 - Xiaomi 12 (Lineage OS 22.2)
 - Xiaomi 13 Ultra (HyperOS 2.0)
 - Xiaomi Redmi Note 15 5G (HyperOS 2.0)
+- Poco F8 Pro (HyperOS 3.0)
 
 ---
 
