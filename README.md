@@ -47,7 +47,7 @@
 - After signing in, **agree to the disclaimer**
 
 ### Step 9: ADB and Fastboot
-- Vist this [site](https://developer.android.com/tools/releases/platform-tools?hl=en) and select the one for **Windows**
+- Enter this [site](https://developer.android.com/tools/releases/platform-tools?hl=en) and select the one for **Windows**
 - After download, extract and navigate to its folder
 - Click on the **address bar** of the folder and replace everything with **cmd**
 - Press enter and a **CMD window** should pop up
