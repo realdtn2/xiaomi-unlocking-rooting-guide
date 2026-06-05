@@ -76,7 +76,7 @@
 > <summary><b>KernelSU (recommended — install to check if your phone is supported) (Android 12 and above only) </b></summary>
 >
 > ### Step 1: Obtain ROM Files
-> 1. Navigate to **About phone -> version** on your device
+> 1. Navigate to **About phone -> OS version** on your device
 > 2. Download the firmware **(Fastboot ROM)** from [miuirom.org](https://miuirom.org/) that matches **your device** and **OS version**
 >
 > ### Step 2: Extract Firmware
