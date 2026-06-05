@@ -1,4 +1,4 @@
-# Bootloader Unlock / Root / Hide Root/ Play Integrity/ Spoof Bootloader Status as Locked for Xiaomi devices (HyperOS/HyperOS 2.0/HyperOS 3.0) (Global)
+# Bootloader Unlock / Root / Hide Root/ Play Integrity/ Spoof Bootloader Status as Locked (Key Attestation) for Xiaomi devices (HyperOS/HyperOS 2.0/HyperOS 3.0) (Global)
 
 # Bootloader Unlock
 
@@ -198,7 +198,7 @@
 
 ---
 
-# Hide Root/ Play Integrity Fix/ Spoof Bootloader Status as Locked
+# Hide Root/ Play Integrity Fix/ Spoof Bootloader Status as Locked (Key Attestation)
 
 ## Requirements
 
@@ -374,7 +374,7 @@
 
 ---
 
-## Spoof Bootloader Status
+## Spoof Bootloader Status as Locked (Key Attestation)
 
 ### Step 1: Keybox Automation
 1. Open **KsuWebUI**
