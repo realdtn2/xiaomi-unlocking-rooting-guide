@@ -55,7 +55,7 @@
 ### Step 10: USB Debugging
 - In **Developer Options**, enable **USB Debugging**
 
-## Step 11: Bootloader Unlock
+### Step 11: Bootloader Unlock
 - Plug in your phone and press **allow computer** when prompted on the phone
 - In the **CMD window** opened in **step 8**, type `adb.exe reboot fastboot` and press enter
 - Your phone should reboot and display **FASTBOOT**
