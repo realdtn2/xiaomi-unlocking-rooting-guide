@@ -381,7 +381,7 @@
 2. Click on the **TEESimulator-RS** module
 3. Click on the **3 dots** on the top right corner
 4. Press **Keybox Automation**
-5. You can set **Fetch Interval** to your liking, I just leave it as it is
+5. You can set **Fetch Interval** to your liking or just leave it as it is
 6. Find **Manual Actions** and click on **Fetch Key**
 
 ### Step 2: Choose your apps
