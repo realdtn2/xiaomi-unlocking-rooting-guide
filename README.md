@@ -1,225 +1,391 @@
+# Bootloader Unlock / Root / Hide Root/ Play Integrity/ Spoof Bootloader Status as Locked for Xiaomi devices (HyperOS/HyperOS 2.0/HyperOS 3.0)
 
-# Unlocking bootloader, rooting, hiding root, Play Integrity, and hiding unlocked bootloader status for Xiaomi devices (this guide should work for most of the newer Xiaomi devices with HyperOS/HyperOS 2.0/HyperOS 3.0)
+# Bootloader Unlock
 
-## Unlocking the bootloader (HyperOS)
+## Warning
+- **BACK UP ANY DATA YOU MAY HAVE ON YOUR PHONE**
+- **ALL OF YOUR DATA WILL BE WIPED**
 
-### Warning
-- BACK UP ANY DATA YOU MAY HAVE ON YOUR PHONE; THIS WILL FACTORY RESET YOUR PHONE.
-
-### Requirements
-- Your Xiaomi account must be over 30 days old.
-- Enable **Find device** in **Xiaomi Cloud** in the Settings app (this may not be necessary, but you should do it to be sure).
+## Requirements
+- Your **Xiaomi account** must be over **30 days old**
+- Enable **Find device** in **Xiaomi Cloud** in **Settings** (might not be necessary, but enable for certainty)
 
 ### Step 1: Enable OEM Unlocking
-- In the Settings app, go to  **About phone**, and then tap the **OS version** 5 times.
-- Enable **OEM Unlocking** from **Developer Options**.
+- In **Settings**, press **About phone** and tap **OS version** 5 times to unlock **Developer Options**
+- In **Developer Options**, enable **OEM Unlocking**
 
 ### Step 2: Reinstall Xiaomi Community
-- Uninstall Xiaomi Community, reboot, and then install the latest version of Xiaomi Community via the Play Store.
+- Uninstall **Xiaomi Community** and reboot
+- Install the **latest version** of **Xiaomi Community** on the **Play Store**
 
-### Step 3: Change account's region
-- Sign in to your Xiaomi account through the Xiaomi Community app.
-- Go to the **Me** tab, scroll down and select **Set up**.
-- Select **Change region** and choose **Global**.
+### Step 3: Account Region
+- Sign in with your **Xiaomi account** in **Xiaomi Community**
+- In the **Me** tab, find **Set up** and press it
+- Press **Change region** and choose **Global**
 
 ### Step 4: Apply for unlocking
-- At exactly 12:00 AM GMT+8, press "Apply for unlocking" (If you do this too late, you may encounter an "application quota limit reached" error, so ensure you act precisely at 12:00 AM GMT+8, you can use this [site](https://time.is/GMT+8) to check the time).
-- It might display an "Account Error" window. If that happens, you'll need to retry after 10 days.
-- **Tip:** If you cannot apply for unlocking or encounter quota limit with this guide, you can follow another method using [this Python automation script](https://xdaforums.com/t/how-to-unlock-bootloader-on-xiaomi-hyperos-all-devices-except-cn.4654009/#post-89311595) to automate the button press and run multiple instances simultaneously to improve your chances.
+- Press "Apply for unlocking" at exactly **12:00 AM GMT+8** (pressing it too late will cause the **"application quota limit reached"** error. Use this [website](https://time.is/GMT+8) to check the time)
+- **"Account Error"** might show up. If that happens, retry after 10 days
+- **Tip:** If it keeps failing, try another method using this[ Python automation script](https://xdaforums.com/t/how-to-unlock-bootloader-on-xiaomi-hyperos-all-devices-except-cn.4654009/#post-89311595)
 
-### Step 5: Preparing for bootloader unlock
-- Logout of your Xiaomi account within your phone's settings.
-- Reboot your phone.
-- Log back into your Xiaomi account in the settings.
+### Step 5: Bootloader Unlock Preparation
+- Logout of your **Xiaomi account** in **Settings**
+- Reboot
+- Login again with your **Xiaomi account** in **Settings**
 
-### Step 6: Add your account to Mi Unlock
-- Turn off your Wi-Fi and ensure you have a working mobile data connection.
-- In **Developer Options**, scroll down until you see **Mi Unlock status**, select it, and press **Add account and device**.
+### Step 6: Add account to Mi Unlock
+- Turn off **Wi-Fi** and make sure a **working mobile data connection** is available
+- In **Developer Options**, find **Mi Unlock status** and press it
+- Press **Add account and device**
 
-### Step 7: Download the Mi Unlock tool
-- Download the latest version of the tool from [here](https://miuirom.org/updates/mi-flash-unlock).
+### Step 7: Mi Unlock tool
+- Download the **latest version** of it from [here](https://miuirom.org/updates/mi-flash-unlock)
 
-### Step 8: Sign in to your Xiaomi account in the Mi Unlock tool
-- After downloading the tool, extract it, navigate to the extracted folder, and open **miflash_unlock.exe**.
-- It will prompt you to sign in.
-- After signing in, agree to the disclaimer.
+### Step 8: Sign in to your Xiaomi account
+- After download, extract and navigate to its folder
+- Open **miflash_unlock.exe**, you will be prompted to sign in
+- After signing in, **agree to the disclaimer**
 
-### Step 9: Download ADB and Fastboot tools
-- Go to this [site](https://developer.android.com/tools/releases/platform-tools?hl=en) and select the one for Windows.
-- Download it and extract it. You should now see a folder named `platform-tools`.
-- Navigate to the extracted folder, click on the address bar, and replace everything in the address bar with **cmd**, and then press enter and a CMD window should show up.
+### Step 9: ADB and Fastboot
+- Vist this [site](https://developer.android.com/tools/releases/platform-tools?hl=en) and select the one for **Windows**
+- After download, extract and navigate to its folder
+- Click on the **address bar** of the folder and replace everything with **cmd**
+- Press enter and a **CMD window** should pop up
 
-### Step 10: Enable USB Debugging
-- Enable **USB Debugging** from **Developer Options**.
+### Step 10: USB Debugging
+- In **Developer Options**, enable **USB Debugging**
 
-## Step 11: Unlocking the bootloader
-- Plug your phone in and press allow computer when prompted on the phone.
-- In the CMD window that you opened in step 8, type `adb.exe reboot fastboot` and press enter.
-- Your phone should reboot and show the text FASTBOOT.
-- In the Mi Unlock app, it should say phone connected. Now press unlock, and then press unlock anyway.
-- It might say couldn't unlock; you have to wait for the amount of hours that is displayed (During this waiting time, DO NOT log out of your Xiaomi account on the phone or the Xiaomi Community app).
-- After waiting for the specified amount of hours, do the same unlocking process and this time your phone should be unlocked.
-
----
-
-## Rooting
-
-### Disclaimer: `init_boot` is for newer devices. If your device does not have `init_boot`, replace `init_boot` with `boot` instead.
-### Tip: Disable auto-update in the update settings if you don't want to root again every time.
-
-### Step 1: Obtain ROM Files
-1. Navigate to **About phone -> OS Version** on your device.
-2. Download the firmware (Fastboot ROM) from [miuirom.org](https://miuirom.org/) corresponding to your device and OS Version.
-
-### Step 2: Extract Firmware
-- Use tools like **7-Zip** to extract the firmware.
-
-### Step 3: Locate the `images` Folder
-- Navigate to the `images` folder within the extracted firmware files.
-
-### Step 4: Backup `init_boot.img`
-1. Copy `init_boot.img` to the `platform-tools` folder that you extracted in Step 8 of **unlocking the bootloader**.
-2. Rename it to `init_boot_stock.img` (DO NOT DELETE THIS FILE IN CASE OF A BRICK).
-
-### Step 5: Transfer to Phone
-- Transfer the `init_boot_stock.img` file to your phone.
-
-### Step 6: Install Magisk Alpha
-- Download and install the lastest version of Magisk Alpha from their [Telegram Channel](https://t.me/magiskalpha).
-
-### Step 7: Patch the `init_boot_stock.img`
-1. Open the Magisk Alpha app.
-2. Tap **Install** -> **Select and Patch a File**.
-3. Choose `init_boot_stock.img`.
-4. The patched file will appear as something like `magisk_patched-28001_p5r8c.img` in your phone's Download folder.
-
-### Step 8: Transfer Patched File to PC
-- Move the patched file (`magisk_patched-28001_xxxxx.img`) to the `platform-tools` folder on your computer.
-
-### Step 9: Reboot to Fastboot
-1. Connect your phone to the computer.
-2. Navigate to the `platform-tools` folder, click on the address bar, and replace everything in the address bar with **cmd**, and then press enter and a CMD window should show up.
-3. Run the following command in CMD:
-   ```
-   adb.exe reboot fastboot
-   ```
-
-### Step 10: Flash Patched `init_boot`
-1. In the same CMD window, execute the following commands:
-   ```
-   fastboot.exe flash init_boot_a magisk_patched-28001_xxxxx.img (e.g., fastboot.exe flash init_boot_a magisk_patched-28001_p5r8c.img)
-   fastboot.exe flash init_boot_b magisk_patched-28001_xxxxx.img (e.g., fastboot.exe flash init_boot_b magisk_patched-28001_p5r8c.img)
-   fastboot.exe reboot
-   ```
-   For ***OLD DEVICES*** without `init_boot` ***(DO NOT FOLLOW THESE COMMANDS IF YOUR DEVICE ALREADY HAVE `init_boot` !!!!!!!!!!!!!!!!!!!!!)***:
-   ```
-   fastboot.exe flash boot_a magisk_patched-28001_xxxxx.img (e.g., fastboot.exe flash boot_a magisk_patched-28001_p5r8c.img)
-   fastboot.exe flash boot_b magisk_patched-28001_xxxxx.img (e.g., fastboot.exe flash boot_b magisk_patched-28001_p5r8c.img)
-   fastboot.exe reboot
-   ```
-   For ***OLD DEVICES*** without `init_boot`, if there's an error, try running this command ***(DO NOT FOLLOW THESE COMMANDS IF YOUR DEVICE ALREADY HAVE `init_boot` !!!!!!!!!!!!!!!!!!!!!)***::
-   ```
-   fastboot.exe --disable-verity --disable-verification flash vbmeta vbmeta.img (vbmeta.img is from the firmware you downloaded)
-   ```
-
-Your device should be rebooted to the system and have root access.
+## Step 11: Bootloader Unlock
+- Plug in your phone and press **allow computer** when prompted on the phone
+- In the **CMD window** opened in **step 8**, type `adb.exe reboot fastboot` and press enter
+- Your phone should reboot and display **FASTBOOT**
+- In the Mi Unlock app, it should display **phone connected**
+- Press **unlock** and then press **unlock anyway**
+- It might say **couldn't unlock**; wait for the amount of time displayed (during this time, **DO NOT** log out of your **Xiaomi account** on the phone or in **Xiaomi Community**)
+- When **enough time** has passed, repeat **this step** and your phone should be unlocked
 
 ---
 
-## Hiding Root (You SHOULD be able to use this hiding root section with most Android devices like Xiaomi, Samsung, etc.)
+# Root
 
+## Disclaimer: `init_boot` is for newer devices. Older devices do not have `init_boot`, so only use `boot` on those
 
-### Step 1: Hide Magisk App
-1. Open the Magisk Alpha app.
-2. Go to **Settings** -> **Hide Magisk App** (You can name it anything, e.g., `Settings`).
-3. Disable **Zygisk**.
-4. Turn **Enforce Denylist** OFF.
+## Tip: Disable auto-update in the Settings to prevent losing root
 
-### Step 2: Configure DenyList
-1. Navigate to **Configure DenyList**.
-2. Select the apps you want to hide root from (tap the app, and then tap on the checkbox).
+> <details>
+> <summary><b>KernelSU (recommended — install to check if your phone is supported) (Android 12 and above only) </b></summary>
+>
+> ### Step 1: Obtain ROM Files
+> 1. Navigate to **About phone -> version** on your device
+> 2. Download the firmware **(Fastboot ROM)** from [miuirom.org](https://miuirom.org/) that matches **your device** and **OS version**
+>
+> ### Step 2: Extract Firmware
+> - After download, extract and navigate to its folder
+>
+> ### Step 3: Locate the `images` Folder
+> - Find the `images` folder and enter it
+>
+> ### Step 4: Backup `init_boot.img`
+> 1. In the folder, copy `init_boot.img` to the `platform-tools` folder in **Step 8 of unlocking the bootloader**
+> 2. Rename the copied file to `init_boot_stock.img` (DO NOT DELETE IN CASE OF A BRICK)
+>
+> ### Step 5: Transfer to Phone
+> - Transfer the `init_boot_stock.img` file to your phone
+>
+> ### Step 6: Install KernelSU
+> - Download and install the **latest APK** from their **releases**    
+> https://github.com/tiann/KernelSU/releases
+>
+> ### Step 7: Check KernelSU compatibility
+> 1. Open **KernelSU**
+> 2. If the app shows **Not installed**, then your device is **officially supported** by **KernelSU**      
+>    If the app shows **Unsupported**, it means that you should **compile the kernel yourself**, **KernelSU** won't and never provide files for you to flash
+>
+> ### Step 8: Patch the `init_boot_stock.img`
+> 1. Open **KernelSU**
+> 2. Click on **Not installed - Tap to install** -> **Select a file**.
+> 3. Choose `init_boot_stock.img`
+> 4. Click on **Next** and choose the option with **This device KMI**
+> 5. Press **Confirm**
+> 6. The **patched file** should be something like `kernelsu_patched_20260605_045957.img` in the **Download** folder of your phone
+>
+> ### Step 8: Transfer Patched File to PC
+> - Move the **patched file** (`kernelsu_patched_20260605_045957.img`) to `platform-tools`
+>
+> ### Step 9: Reboot to Fastboot
+> 1. Plug in your phone
+> 2. Navigate to `platform-tools`, click on the **address bar** of the folder and replace everything with **cmd**
+> 3. Press enter and a **CMD window** should pop up
+> 4. Run the following command in CMD:
+>    ```
+>    adb.exe reboot fastboot
+>    ```
+>
+> ### Step 10: Flash Patched `init_boot`
+> 1. In the same CMD window, execute the following commands using it as an example:
+>    ```
+>    fastboot.exe flash init_boot_a kernelsu_patched_20260605_045957.img
+>    fastboot.exe flash init_boot_b kernelsu_patched_20260605_045957.img
+>    fastboot.exe reboot
+>    ```
+>
+> 2. Your device should reboot into the system and be rooted
+>
+> </details>
 
-### Step 3: Install Required Magisk Modules
-Install the following modules in this order:
-- [Zygisk Next](https://github.com/Dr-TSNG/ZygiskNext/releases)
-- [Tricky Store](https://github.com/5ec1cff/TrickyStore/releases)
-- [Zygisk Assistant](https://github.com/snake-4/Zygisk-Assistant/releases)
-- [LSPosed](https://github.com/JingMatrix/LSPosed/releases)
-- [Shamiko](https://github.com/LSPosed/LSPosed.github.io/releases)
-
-### Step 4: Reboot
-
-### Step 5: Install Hide My Applist
-1. Install the [Hide My Applist module](https://github.com/Dr-TSNG/Hide-My-Applist/releases).
-2. Enable it via LSPosed manager.
-
-### Step 6: Configure "Template manage"
-1. On the home screen of "Hide My Applist", go to **Template manage** and create a blacklist template.
-2. Name it anything, and add the following to **Apps Invisible**:
-   - Hide My Applist
-   - Settings (Hidden Magisk App) (If you unhide the Magisk Alpha app, you have to add it back when you hide it again)
-   - Any LSPosed modules you will install in the future
-
-### Step 7: Configure "App Manage"
-1. On the home screen of "Hide My Applist", go to **App Manage** and select the apps that are detecting root.
-2. Select "Enable Hide" -> Set "Work Mode" to Blacklist (default option) -> Select "Using 0 templates" and choose the template you named.
+> <details>
+> <summary><b>Magisk Alpha</b></summary>
+>
+> ### Step 1: Obtain ROM Files
+> 1. Navigate to **About phone -> OS version** on your device
+> 2. Download the firmware **(Fastboot ROM)** from [miuirom.org](https://miuirom.org/) that matches **your device** and **OS version**
+>
+> ### Step 2: Extract Firmware
+> - After download, extract and navigate to its folder
+>
+> ### Step 3: Locate the `images` Folder
+> - Find the `images` folder and enter it
+>
+> ### Step 4: Backup `init_boot.img`
+> 1. In the folder, copy `init_boot.img` to the `platform-tools` folder in **Step 8 of unlocking the bootloader**.
+> 2. Rename the copied file to `init_boot_stock.img` (DO NOT DELETE IN CASE OF A BRICK)
+>
+> ### Step 5: Transfer to Phone
+> - Transfer the `init_boot_stock.img` file to your phone
+>
+> ### Step 6: Install Magisk Alpha
+> - Download and install the **latest version** of Magisk Alpha from their [Telegram Channel](https://t.me/magiskalpha)
+>
+> ### Step 7: Patch the `init_boot_stock.img`
+> 1. Open **Magisk Alpha**
+> 2. Tap **Install** -> **Select and Patch a File**
+> 3. Choose `init_boot_stock.img`
+> 4. The **patched file** should be something like `magisk_patched-XXXXX_xxxxx.img` in the **Download** folder of your phone
+>
+> ### Step 8: Transfer Patched File to PC
+> - Move the **patched file** (`magisk_patched-XXXXX_xxxxx.img`) to `platform-tools`
+>
+> ### Step 9: Reboot to Fastboot
+> 1. Plug in your phone
+> 2. Navigate to `platform-tools`, click on the **address bar** of the folder and replace everything with **cmd**
+> 3. Press enter and a **CMD window** should pop up
+> 4. Run the following command in CMD
+>    ```
+>    adb.exe reboot fastboot
+>    ```
+>
+> ### Step 10: Flash Patched `init_boot`
+> 1. In the same CMD window, execute the following commands
+>    ```
+>    fastboot.exe flash init_boot_a magisk_patched-28001_xxxxx.img (e.g., fastboot.exe flash init_boot_a magisk_patched-28001_p5r8c.img)
+>    fastboot.exe flash init_boot_b magisk_patched-28001_xxxxx.img (e.g., fastboot.exe flash init_boot_b magisk_patched-28001_p5r8c.img)
+>    fastboot.exe reboot
+>    ```
+>    **Only** for **OLD DEVICES** without `init_boot` ***(DO NOT FOLLOW IF YOUR DEVICE HAVE `init_boot`)***
+>    ```
+>    fastboot.exe flash boot_a magisk_patched-28001_xxxxx.img (e.g., fastboot.exe flash boot_a magisk_patched-28001_p5r8c.img)
+>    fastboot.exe flash boot_b magisk_patched-28001_xxxxx.img (e.g., fastboot.exe flash boot_b magisk_patched-28001_p5r8c.img)
+>    fastboot.exe reboot
+>    ```
+>    **Only** for **OLD DEVICES** without `init_boot`, if there's an **error**, try running this command ***(DO NOT FOLLOW IF YOUR DEVICE HAVE `init_boot`)***
+>    ```
+>    fastboot.exe --disable-verity --disable-verification flash vbmeta vbmeta.img (vbmeta.img is from the firmware you downloaded)
+>    ```
+>
+> 2. Your device should reboot into the system and be rooted
+>
+> </details>
 
 ---
 
-## Play Integrity Fix (MAY 2025)
+# Hide Root/ Play Integrity Fix/ Spoof Bootloader Status as Locked
 
-As of May 2025, Google has rolled out major changes to the Play Integrity API, follow these steps to fix it:
-### Step 1: Install Required Magisk Modules
-Make sure you already have the [Tricky Store](https://github.com/5ec1cff/TrickyStore/releases) module from Step 3 of **Hiding Root** installed, then install the following modules:
-- [PlayIntegrityFix](https://github.com/KOWX712/PlayIntegrityFix/releases) (download the newest **inject-s** version)
-- [Tricky Store Addon](https://github.com/KOWX712/Tricky-Addon-Update-Target-List/releases)
-- [Busybox](https://mmrl.dev/repository/grdoglgmr/busybox-ndk)
-- [Yuri Keybox Manager](https://github.com/dpejoh/yurikey/releases)
+## Requirements
 
-### Step 2: Reboot
+> <details>
+> <summary><b>KernelSU</b></summary>
+>
+> ### Step 1: Install Required Magisk/ KernelSU Modules
+> Install the **latest release version** of the following modules in this order:
+> - Hybrid Mount (reboot your phone)  
+>   https://github.com/Hybrid-Mount/meta-hybrid_mount/releases
+> - Zygisk Next (reboot your phone)  
+>   https://github.com/Dr-TSNG/ZygiskNext/releases
+> - TEESimulator-RS (Better Alternative of Tricky Store)  
+>   https://github.com/Enginex0/TEESimulator-RS/releases
+> - Tricky Addon Enhanced (auto-fetch keyboxes)  
+>   https://github.com/Enginex0/tricky-addon-enhanced/releases (press Vol+ when asked)
+> - Vector (LSPosed fork)  
+>   https://github.com/JingMatrix/Vector/releases
+> - PlayIntegrityFix (inject-s)  
+>   https://github.com/KOWX712/PlayIntegrityFix/releases
+> - Shamiko  
+>   https://github.com/LSPosed/LSPosed.github.io/releases
+>
+> ### Step 2: Reboot
+>
+> </details>
 
-### Step 3: Install KsuWebUI
-- Download and install the lastest version of KsuWebUI from [here](https://github.com/5ec1cff/KsuWebUIStandalone/releases).
+> <details>
+> <summary><b>Magisk Alpha</b></summary>
+>
+> ### Step 1: Install Required Magisk Modules
+> Install the **release version** of the following modules in this order:
+> - Zygisk Next (reboot your phone)  
+>   https://github.com/Dr-TSNG/ZygiskNext/releases
+> - TEESimulator-RS (Better Alternative of Tricky Store)  
+>   https://github.com/Enginex0/TEESimulator-RS/releases
+> - Tricky Addon Enhanced (auto-fetch keyboxes)  
+>   https://github.com/Enginex0/tricky-addon-enhanced/releases (press Vol+ when asked)
+> - Vector (LSPosed fork)  
+>   https://github.com/JingMatrix/Vector/releases
+> - PlayIntegrityFix (inject-s)  
+>   https://github.com/KOWX712/PlayIntegrityFix/releases
+> - Shamiko  
+>   https://github.com/LSPosed/LSPosed.github.io/releases
+>
+> ### Step 2: Reboot
+>
+> </details>
 
-### Step 3: Configure PlayIntegrityFix
+## Hide Root (should be compatible with most Android devices like Xiaomi, Samsung, etc.)
+
+> <details>
+> <summary><b>KernelSU</b></summary>
+>
+> ### Step 1: Install KsuWebUI
+> - Download and install the latest version of KsuWebUI from  
+>   https://github.com/5ec1cff/KsuWebUIStandalone/releases
+>
+> ### Step 2: Set up KernelSU
+> 1. Open **KernelSU**
+> 2. Go to **Settings** → Turn off **Kernel unmount**
+>
+> ### Step 3: Configure Zygisk Next
+> 1. Open **KsuWebUI**
+> 2. Click on the **Zygisk Next** module
+> 3. Set **Denylist Policy** to **Unmount Only**
+> 4. Turn on **Use anonymous memory**
+>
+> ### Step 4: Install Hide My Applist
+> - Install Open Source HMA-OSS  
+>   https://github.com/frknkrc44/HMA-OSS/releases
+> - Enable it in the **LSPosed Manager** notification
+>
+> ### Step 5: Configure "Manage templates"
+> 1. Open **HMA-OSS**
+> 2. Go to **Manage templates**
+> 3. Create a **blacklist template**
+> 4. Name it anything
+> 5. Edit list of **0 apps invisible**, add:
+>    - HMA-OSS  
+>    - KernelSU  
+>    - All LSPosed modules installed
+> 6. If new LSPosed modules are installed later, update this template again
+>
+> ### Step 6: Configure "Manage apps"
+> 1. Open **HMA-OSS**
+> 2. Go to **Manage apps**
+> 3. Select the app(s) detecting root
+> 4. Turn on **Enable hide**
+> 5. Press **Template config**
+> 6. Make sure **Work mode** is **Blacklist**
+> 7. Press **Using 0 templates** and select your **blacklist template**
+> 8. Confirm
+>
+> ### Step 7: Make sure Shamiko is toggled ON
+>
+> </details>
+
+> <details>
+> <summary><b>Magisk Alpha</b></summary>
+>
+> ### Step 1: Install KsuWebUI
+> - Download and install the latest version of KsuWebUI from  
+>   https://github.com/5ec1cff/KsuWebUIStandalone/releases
+>
+> ### Step 2: Hide Magisk App
+> 1. Open **Magisk Alpha**
+> 2. Go to **Settings** → **Hide Magisk App** (you can name it anything, e.g., `Settings`)
+> 3. Disable **Zygisk**
+> 4. Turn **Enforce Denylist** OFF
+>
+> ### Step 3: Configure DenyList
+> 1. Navigate to **Configure DenyList**
+> 2. Select the apps you want to **hide root** from (tap app first, then checkbox)
+>
+> ### Step 4: Configure Zygisk Next
+> 1. Open **KsuWebUI**
+> 2. Click on **Zygisk Next** module
+> 3. Set **Denylist Policy** to **Enforced**
+> 4. Turn on **Use anonymous memory**
+>
+> ### Step 5: Install Hide My Applist
+> - Install Open Source HMA-OSS  
+>   https://github.com/frknkrc44/HMA-OSS/releases
+> - Enable it in the **LSPosed Manager** notification
+>
+> ### Step 6: Configure "Manage templates"
+> 1. Open **HMA-OSS**
+> 2. Go to **Manage templates**
+> 3. Create a **blacklist template**
+> 4. Name it anything
+> 5. Edit list of **0 apps invisible**, add:
+>    - HMA-OSS  
+>    - Settings (hidden Magisk app or renamed one)  
+>    - All LSPosed modules installed
+> 6. If new modules are installed later, update this template again
+>
+> ### Step 7: Configure "Manage apps"
+> 1. Open **HMA-OSS**
+> 2. Go to **Manage apps**
+> 3. Select the app(s) detecting root
+> 4. Turn on **Enable hide**
+> 5. Press **Template config**
+> 6. Make sure **Work mode** is **Blacklist**
+> 7. Press **Using 0 templates** and select your **blacklist template**
+> 8. Confirm
+>
+> ### Step 8: Make sure Shamiko is toggled ON
+>
+> </details>
+
+---
+
+## Play Integrity Fix
+
+### Step 1: Configure PlayIntegrityFix
 1. Open the KsuWebUI app.
-2. Click on the **PlayIntegrityFix** module.
-3. Click on the **Advanced** button, and make sure **Spoof Build**, **Spoof Build (Play Store)**, **Spoof Props**, **Spoof Provider**, and **Spoof Signature** are toggled on.
-4. Click on the **Fetch pif.json** button, and wait for it to be done
+2. Click on the **Play Integrity Fix [INJECT]** module.
+3. Make sure **Spoof Build** and **Spoof Build (Play Store)** is enabled
+4. Click on **Fetch** and choose **GitHub** to get the **latest one**
 
-### Step 4: Configure Yuri Keybox Manager
-1. Open the KsuWebUI app.
-3. Click on the **Yuri Keybox Manager** module.
-4. Go to the **Menu** tab
-5. Click **Set Up Yuri Keybox**, **Set Up Security Patch**, **Set Up Verified Boothash**, **Set up Target.txt**, and **Force Stop & Clear Data Play Store**
+### Step 2: Check the Integrity
+- Use this [app](https://play.google.com/store/apps/details?id=gr.nikolasspyr.integritycheck&hl=en) to check it
 
-### Step 5: Reboot
-
-### Step 6: Check the Integrity
-- Use this [app](https://play.google.com/store/apps/details?id=gr.nikolasspyr.integritycheck&hl=en)
-
-### Note: Do not change keybox too frequently, or preferably, not at all. If you check too frequently, Google will get suspicious.
-### Reminder: If you suddenly fail to pass Play Integrity, do Step 3 & 4 again.
+### Note: If you suddenly fail to pass Play Integrity, do Step 3 & 4 again
 
 <p>
    <img src="https://github.com/user-attachments/assets/af8dcfd8-8ffa-4694-b500-63b78e527316" alt="Image 1" width="200">
 </p>
 
-> <span style="opacity:0.6"> Some custom ROMS spoof old fingerprints (PIF's) by default, you'd need to disable that functionality if your rom has it built in, I can't help much for this part.</span>
+> <span style="opacity:0.6"> Some old custom ROMS spoof old fingerprints (PIF's) by default, you'd need to disable that functionality if your ROM has it built in, I can't help much for this part</span>
 
 
 ---
 
-## Hiding Bootloader Status
+## Spoof Bootloader Status
 
-### Step 1: Install Required Magisk Modules
-Make sure the [Tricky Store](https://github.com/5ec1cff/TrickyStore/releases) and [Tricky Store Addon](https://github.com/KOWX712/Tricky-Addon-Update-Target-List/releases) modules are installed.
+### Step 1: Keybox Automation
+1. Open **KsuWebUI**
+2. Click on the **TEESimulator-RS** module
+3. Click on the **3 dots** on the top right corner
+4. Press **Keybox Automation**
+5. You can set **Fetch Interval** to your liking, I just leave it as it is
+6. Find **Manual Actions** and click on **Fetch Key**
 
-### Step 2: Adding Apps
-1. Open the **KsuWebUI**
-2. Click on the **Tricky Store** module.
-3. You can search for the apps you'd like to hide bootloader status from, then check the box for it.
-4. Hit the blue **Save** button at the center bottom of the screen, scroll to top if you don't see the button.
+### Step 2: Choose your apps
+Search for the app(s) you want to **spoof bootloader status as locked**, then click on the checkbox for it
 
 ---
 
@@ -236,19 +402,8 @@ Make sure the [Tricky Store](https://github.com/5ec1cff/TrickyStore/releases) an
 
 ## Images
 <p>
-   <img src="https://github.com/user-attachments/assets/9095c40c-f120-4358-b7fa-58d34f73e1f0" alt="Image 1" width="200" style="margin-right: 150px;">
-   <img src="https://github.com/user-attachments/assets/856057ba-45a0-42de-8e9f-b8b4fa38d03d" alt="Image 2" width="200" style="margin-right: 150px;">
-   <img src="https://github.com/user-attachments/assets/65b9ccd2-98df-43c0-b530-2bda994d203e" alt="Image 3" width="200" style="margin-right: 150px;">
-   <img src="https://github.com/user-attachments/assets/32bed38b-407a-4f6c-b583-ae7ec3e6af9c" alt="Image 4" width="200" style="margin-right: 150px;">
-   <img src="https://github.com/user-attachments/assets/de201456-21d5-4882-bd3e-ceb6b39c56bf" alt="Image 5" width="200" style="margin-right: 150px;">
-   <img src="https://github.com/user-attachments/assets/6cb09d52-a83b-4308-beab-364c1fc42baf" alt="Image 6" width="200" style="margin-right: 150px;">
-   <img src="https://github.com/user-attachments/assets/a98f5023-4862-40d7-8e8f-09620cd2c4b3" alt="Image 7" width="200" style="margin-right: 150px;">
-   <img src="https://github.com/user-attachments/assets/74596ec2-21f7-405d-85e0-0006c112499e" alt="Image 8" width="200" style="margin-right: 150px;">
-   <img src="https://github.com/user-attachments/assets/210824b1-00a3-4c3f-a8fe-ed45364a1479" alt="Image 9" width="200" style="margin-right: 150px;">
-   <img src="https://github.com/user-attachments/assets/d1fe51d7-650b-4f0c-8830-ff11adca6209" alt="Image 10" width="200" style="margin-right: 150px;">
-   <img src="https://github.com/user-attachments/assets/83963301-a37f-493c-b3d3-57978bb1eadc" alt="Image 11" width="200" style="margin-right: 150px;">
-   <img src="https://github.com/user-attachments/assets/4134ecbb-c89c-4e69-82ec-b00429ab0839" alt="Image 12" width="200" style="margin-right: 150px;">
-   <img src="https://github.com/user-attachments/assets/b59abb74-5f40-497e-affa-17c814925120" alt="Image 13" width="200" style="margin-right: 150px;">
-   <img src="https://github.com/user-attachments/assets/08372f3b-8e40-4293-9e3a-85095f02850d" alt="Image 13" width="200" style="margin-right: 150px;">
-   <img src="https://github.com/user-attachments/assets/0935505c-bf30-438c-999f-2ff045da6aa9" alt="Image 13" width="200">
+   <img src="https://github.com/user-attachments/assets/6cb09d52-a83b-4308-beab-364c1fc42baf" alt="Image 1" width="200" style="margin-right: 150px;">
+   <img src="https://github.com/user-attachments/assets/4134ecbb-c89c-4e69-82ec-b00429ab0839" alt="Image 2" width="200" style="margin-right: 150px;">
+   <img src="https://github.com/user-attachments/assets/cf09561f-9642-4c08-8260-b8f2c70869e5" alt="Image 3" width="200" style="margin-right: 150px;">
+   <img src="https://github.com/user-attachments/assets/0dffcdaa-2921-4e10-aa1b-40b2f2f9427e" alt="Image 4" width="200">
 </p>
