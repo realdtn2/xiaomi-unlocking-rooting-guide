@@ -86,7 +86,7 @@
 > - Find the `images` folder and enter it
 >
 > ### Step 4: Backup `init_boot.img`
-> 1. In the folder, copy `init_boot.img` to the `platform-tools` folder in **Step 8 of unlocking the bootloader**
+> 1. In the folder, copy `init_boot.img` to the `platform-tools` folder in **Step 9 of unlocking the bootloader**
 > 2. Rename the copied file to `init_boot_stock.img` (DO NOT DELETE IN CASE OF A BRICK)
 >
 > ### Step 5: Transfer to Phone
@@ -147,7 +147,7 @@
 > - Find the `images` folder and enter it
 >
 > ### Step 4: Backup `init_boot.img`
-> 1. In the folder, copy `init_boot.img` to the `platform-tools` folder in **Step 8 of unlocking the bootloader**.
+> 1. In the folder, copy `init_boot.img` to the `platform-tools` folder in **Step 9 of unlocking the bootloader**.
 > 2. Rename the copied file to `init_boot_stock.img` (DO NOT DELETE IN CASE OF A BRICK)
 >
 > ### Step 5: Transfer to Phone
@@ -384,7 +384,7 @@
 5. You can set **Fetch Interval** to your liking or just leave it as it is
 6. Find **Manual Actions** and click on **Fetch Key**
 
-### Step 2: Select your apps)
+### Step 2: Select your app(s)
 Search for the app(s) you want to **spoof bootloader status as locked**, then click on the checkbox for it
 
 ---
