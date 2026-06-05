@@ -109,10 +109,10 @@
 > 5. Press **Confirm**
 > 6. The **patched file** should be something like `kernelsu_patched_20260605_045957.img` in the **Download** folder of your phone
 >
-> ### Step 8: Transfer Patched File to PC
+> ### Step 9: Transfer Patched File to PC
 > - Move the **patched file** (`kernelsu_patched_20260605_045957.img`) to `platform-tools`
 >
-> ### Step 9: Reboot to Fastboot
+> ### Step 10: Reboot to Fastboot
 > 1. Plug in your phone
 > 2. Navigate to `platform-tools`, click on the **address bar** of the folder and replace everything with **cmd**
 > 3. Press enter and a **CMD window** should pop up
@@ -121,7 +121,7 @@
 >    adb.exe reboot fastboot
 >    ```
 >
-> ### Step 10: Flash Patched `init_boot`
+> ### Step 11: Flash Patched `init_boot`
 > 1. In the same CMD window, execute the following commands using it as an example:
 >    ```
 >    fastboot.exe flash init_boot_a kernelsu_patched_20260605_045957.img
