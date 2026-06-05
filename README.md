@@ -73,7 +73,7 @@
 ## Tip: Disable auto-update in the Settings to prevent losing root
 
 > <details>
-> <summary><b>KernelSU (recommended — install to check if your phone is supported) (Android 12 and above only) </b></summary>
+> <summary><b>KernelSU (recommended — install to check if your phone is supported) (Android 12+) </b></summary>
 >
 > ### Step 1: Obtain ROM Files
 > 1. Navigate to **About phone -> OS version** on your device
