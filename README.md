@@ -363,7 +363,7 @@
 ### Step 2: Check the Integrity
 - Use this [app](https://play.google.com/store/apps/details?id=gr.nikolasspyr.integritycheck&hl=en) to check it
 
-### Note: If you suddenly fail to pass Play Integrity, do Step 1 & 2 again
+### Note: If you suddenly fail to pass Play Integrity, do Step 1 again
 
 <p>
    <img src="https://github.com/user-attachments/assets/af8dcfd8-8ffa-4694-b500-63b78e527316" alt="Image 1" width="200">
