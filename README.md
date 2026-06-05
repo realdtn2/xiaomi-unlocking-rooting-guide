@@ -211,7 +211,7 @@
 >   https://github.com/Hybrid-Mount/meta-hybrid_mount/releases
 > - Zygisk Next (reboot your phone)  
 >   https://github.com/Dr-TSNG/ZygiskNext/releases
-> - TEESimulator-RS (Better Alternative of Tricky Store)  
+> - TEESimulator-RS (Way Better Alternative to Tricky Store)  
 >   https://github.com/Enginex0/TEESimulator-RS/releases
 > - Tricky Addon Enhanced (auto-fetch keyboxes)  
 >   https://github.com/Enginex0/tricky-addon-enhanced/releases (press Vol+ when asked)
@@ -233,7 +233,7 @@
 > Install the **release version** of the following modules in this order:
 > - Zygisk Next (reboot your phone)  
 >   https://github.com/Dr-TSNG/ZygiskNext/releases
-> - TEESimulator-RS (Better Alternative of Tricky Store)  
+> - TEESimulator-RS (Way Better Alternative to Tricky Store)  
 >   https://github.com/Enginex0/TEESimulator-RS/releases
 > - Tricky Addon Enhanced (auto-fetch keyboxes)  
 >   https://github.com/Enginex0/tricky-addon-enhanced/releases (press Vol+ when asked)
