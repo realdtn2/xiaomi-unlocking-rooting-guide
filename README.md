@@ -312,7 +312,7 @@
 >
 > ### Step 3: Configure DenyList
 > 1. Navigate to **Configure DenyList**
-> 2. Select the apps you want to **hide root** from (tap app first, then checkbox)
+> 2. Select the app(s) you want to **hide root** from (tap app first, then checkbox)
 >
 > ### Step 4: Configure Zygisk Next
 > 1. Open **KsuWebUI**
@@ -384,12 +384,12 @@
 5. You can set **Fetch Interval** to your liking or just leave it as it is
 6. Find **Manual Actions** and click on **Fetch Key**
 
-### Step 2: Choose your apps
+### Step 2: Select your apps)
 Search for the app(s) you want to **spoof bootloader status as locked**, then click on the checkbox for it
 
 ---
 
-## Tested and found to be working on the following devices (I'd appreciate it if you guys could report it back to me your device if in **Issues** if it works for you)
+## Tested/ Working on the following devices (I'd appreciate it if you could report your device back to me in **Issues** if it works)
 - Xiaomi 14T (HyperOS)
 - Xiaomi Redmi K60 Ultra 5G (HyperOS/HyperOS 2.0)
 - Xiaomi Mi 11 Ultra (HyperOS)
