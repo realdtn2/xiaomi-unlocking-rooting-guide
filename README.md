@@ -1,4 +1,4 @@
-# Bootloader Unlock / Root / Hide Root/ Play Integrity/ Spoof Bootloader Status as Locked for Xiaomi devices (HyperOS/HyperOS 2.0/HyperOS 3.0)
+# Bootloader Unlock / Root / Hide Root/ Play Integrity/ Spoof Bootloader Status as Locked for Xiaomi devices (HyperOS/HyperOS 2.0/HyperOS 3.0) (Global)
 
 # Bootloader Unlock
 
