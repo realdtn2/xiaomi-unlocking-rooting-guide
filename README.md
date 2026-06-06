@@ -32,7 +32,7 @@ Hide Root / Play Integrity / Spoof Bootloader Status as Locked (Key Attestation)
 ### Step 4: Apply for unlocking
 - Press "Apply for unlocking" at exactly **12:00 AM GMT+8** (pressing it too late will cause the **"application quota limit reached"** error. Use this [website](https://time.is/GMT+8) to check the time)
 - **"Account Error"** might show up. If that happens, retry after 10 days
-- **Tip:** If it keeps failing, try another method using this[ Python automation script](https://xdaforums.com/t/how-to-unlock-bootloader-on-xiaomi-hyperos-all-devices-except-cn.4654009/#post-89311595)
+- **Tip:** If it keeps failing, try another method using this [Python automation script](https://xdaforums.com/t/how-to-unlock-bootloader-on-xiaomi-hyperos-all-devices-except-cn.4654009/#post-89311595)
 
 ### Step 5: Bootloader Unlock Preparation
 - Logout of your **Xiaomi account** in **Settings**
