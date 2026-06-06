@@ -204,14 +204,14 @@ Hide Root / Play Integrity / Spoof Bootloader Status as Locked (Key Attestation)
 
 ---
 
-# Hide Root/ Play Integrity Fix/ Spoof Bootloader Status as Locked (Key Attestation)
+# Hide Root / Play Integrity Fix/ Spoof Bootloader Status as Locked (Key Attestation)
 
 ## Requirements
 
 > <details>
 > <summary><b>KernelSU</b></summary>
 >
-> ### Step 1: Install Required Magisk/ KernelSU Modules
+> ### Step 1: Install Required Magisk / KernelSU Modules
 > Install the **latest release version** of the following modules in this order:
 > - Hybrid Mount (reboot your phone)  
 >   https://github.com/Hybrid-Mount/meta-hybrid_mount/releases
@@ -395,7 +395,7 @@ Search for the app(s) you want to **spoof bootloader status as locked**, then cl
 
 ---
 
-## Tested/ Working on the following devices (I'd appreciate it if you could report your device back to me in **Issues** if it works)
+## Tested / Working on the following devices (I'd appreciate it if you could report your device back to me in **Issues** if it works)
 - Xiaomi 14T (HyperOS)
 - Xiaomi Redmi K60 Ultra 5G (HyperOS/HyperOS 2.0)
 - Xiaomi Mi 11 Ultra (HyperOS)
