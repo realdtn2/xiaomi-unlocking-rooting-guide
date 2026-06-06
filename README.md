@@ -204,7 +204,7 @@ Hide Root / Play Integrity / Spoof Bootloader Status as Locked (Key Attestation)
 
 ---
 
-# Hide Root / Play Integrity Fix/ Spoof Bootloader Status as Locked (Key Attestation)
+# Hide Root / Play Integrity Fix / Spoof Bootloader Status as Locked (Key Attestation)
 
 ## Requirements
 
