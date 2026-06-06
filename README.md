@@ -1,4 +1,10 @@
-# Bootloader Unlock / Root / Hide Root/ Play Integrity/ Spoof Bootloader Status as Locked (Key Attestation) for Xiaomi devices (HyperOS/HyperOS 2.0/HyperOS 3.0) (Global) [2026] 
+<h1 align="center">
+Bootloader Unlock and Root for Xiaomi devices (HyperOS/HyperOS 2.0/HyperOS 3.0) (Non-Mainland China Devices)
+<br>
+&
+<br>
+Hide Root / Play Integrity / Spoof Bootloader Status as Locked (Key Attestation) for most Android devices
+</h1>
 
 # Bootloader Unlock
 
