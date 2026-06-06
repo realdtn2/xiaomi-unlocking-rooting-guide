@@ -63,12 +63,12 @@ Hide Root / Play Integrity / Spoof Bootloader Status as Locked (Key Attestation)
 
 ### Step 11: Bootloader Unlock
 - Plug in your phone and press **allow computer** when prompted on the phone
-- In the **CMD window** opened in **step 9**, type `adb.exe reboot fastboot` and press enter
+- In the **CMD window** opened in **Step 9**, type `adb.exe reboot fastboot` and press enter
 - Your phone should reboot and display **FASTBOOT**
 - In the Mi Unlock app, it should display **phone connected**
 - Press **unlock** and then press **unlock anyway**
 - It might say **couldn't unlock**; wait for the amount of time displayed (during this time, **DO NOT** log out of your **Xiaomi account** on the phone or in **Xiaomi Community**)
-- When **enough time** has passed, repeat **this step** and your phone should be unlocked
+- When **enough time** has passed, repeat **this Step** and your phone should be unlocked
 
 ---
 
