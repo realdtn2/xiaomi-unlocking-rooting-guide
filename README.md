@@ -1,5 +1,5 @@
 <h1 align="center">
-Bootloader Unlock and Root for Xiaomi devices (HyperOS/HyperOS 2.0/HyperOS 3.0) (Non-Mainland China Devices)
+Bootloader Unlock and Root for Xiaomi devices (HyperOS / HyperOS 2.0 / HyperOS 3.0) (Non-Mainland China Devices)
 <br>
 &
 <br>
