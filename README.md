@@ -276,7 +276,8 @@ Hide Root / Play Integrity / Spoof Bootloader Status as Locked (Key Attestation)
 > ### Step 4: Install Hide My Applist
 > - Install Open Source HMA-OSS  
 >   https://github.com/frknkrc44/HMA-OSS/releases
-> - Enable it in the **LSPosed Manager** notification
+> - Enable it in the **LSPosed Manager** notification, select **Recommended**
+> - Reboot
 >
 > ### Step 5: Configure "Manage templates"
 > 1. Open **HMA-OSS**
@@ -329,7 +330,8 @@ Hide Root / Play Integrity / Spoof Bootloader Status as Locked (Key Attestation)
 > ### Step 5: Install Hide My Applist
 > - Install Open Source HMA-OSS  
 >   https://github.com/frknkrc44/HMA-OSS/releases
-> - Enable it in the **LSPosed Manager** notification
+> - Enable it in the **LSPosed Manager** notification, select **Recommended**
+> - Reboot
 >
 > ### Step 6: Configure "Manage templates"
 > 1. Open **HMA-OSS**
