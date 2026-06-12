@@ -226,6 +226,12 @@ Hide Root / Play Integrity / Spoof Bootloader Status as Locked (Key Attestation)
 > - PlayIntegrityFix (inject-s)  
 >   https://github.com/KOWX712/PlayIntegrityFix/releases
 > - Shamiko  
+>   Use this **patched version** to be able to install on the **latest version**
+>   **of KernelSU** as the **current version** has a **faulty version check** for it   
+>   https://github.com/realdtn2/xiaomi-unlocking-rooting-guide/raw/refs/heads/main/Shamiko-v1.2.5-414-release-modified.zip
+>
+>   Or you can download the **latest version** yourself and manually extract it
+>   and patch the **version check** if you don't trust my **patched version**   
 >   https://github.com/LSPosed/LSPosed.github.io/releases
 >
 > ### Step 2: Reboot
