@@ -390,24 +390,3 @@ Hide Root / Play Integrity / Spoof Bootloader Status as Locked (Key Attestation)
 
 ### Step 2: Select your app(s)
 Search for the app(s) you want to **spoof bootloader status as locked**, then click on the checkbox for it
-
----
-
-## Tested / Working on the following devices (I'd appreciate it if you could report your device back to me in **Issues** if it works)
-- Xiaomi 14T (HyperOS)
-- Xiaomi Redmi K60 Ultra 5G (HyperOS/HyperOS 2.0)
-- Xiaomi Mi 11 Ultra (HyperOS)
-- Xiaomi 12 (Lineage OS 22.2)
-- Xiaomi 13 Ultra (HyperOS 2.0)
-- Xiaomi Redmi Note 15 5G (HyperOS 2.0)
-- Poco F8 Pro (HyperOS 3.0)
-
----
-
-## Images
-<p>
-   <img src="https://github.com/user-attachments/assets/6cb09d52-a83b-4308-beab-364c1fc42baf" alt="Image 1" width="200" style="margin-right: 150px;">
-   <img src="https://github.com/user-attachments/assets/4134ecbb-c89c-4e69-82ec-b00429ab0839" alt="Image 2" width="200" style="margin-right: 150px;">
-   <img src="https://github.com/user-attachments/assets/cf09561f-9642-4c08-8260-b8f2c70869e5" alt="Image 3" width="200" style="margin-right: 150px;">
-   <img src="https://github.com/user-attachments/assets/0dffcdaa-2921-4e10-aa1b-40b2f2f9427e" alt="Image 4" width="200">
-</p>
